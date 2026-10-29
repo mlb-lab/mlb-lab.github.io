@@ -1,0 +1,377 @@
+[
+  {
+    "id": "dohyeon-lee",
+    "name": "이도현 (Dohyeon Lee)",
+    "position": "Koscom (코스콤)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 1
+  },
+  {
+    "id": "dongpin-oh",
+    "name": "오동빈 (Dongpin Oh)",
+    "position": "Motif Technologies (모티프테크놀로지스)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 2
+  },
+  {
+    "id": "hongtaek-oh",
+    "name": "오홍택 (Hongtaek Oh)",
+    "position": "Hanjin Logistics",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 3
+  },
+  {
+    "id": "hoyong-lee",
+    "name": "이호용 (Hoyong Lee)",
+    "position": "SK AX",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 4
+  },
+  {
+    "id": "jinhee-lee",
+    "name": "이진희 (Jinhee Lee)",
+    "position": "LG Electronics",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 5
+  },
+  {
+    "id": "seokwoo-kang",
+    "name": "강석우 (Seokwoo Kang)",
+    "position": "KT",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 6
+  },
+  {
+    "id": "seonghyeon-kim",
+    "name": "김성현 (Seonghyeon Kim)",
+    "position": "Lotte",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 7
+  },
+  {
+    "id": "seunghui-cho",
+    "name": "조승희 (Seunghui Cho)",
+    "position": "Billy & Co. (빌리앤코)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 8
+  },
+  {
+    "id": "kwangho-lee",
+    "name": "이광호 (Kwangho Lee)",
+    "position": "LG AI Research (LG AI 연구원)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 9
+  },
+  {
+    "id": "firda-aminy-maruf",
+    "name": "Firda Aminy Maruf",
+    "position": "EIJIKMAN RESEARCH INSTITUTE SERVICE COOPERATIVE",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 10
+  },
+  {
+    "id": "donghyun-son",
+    "name": "손동현 (Donghyun Son)",
+    "position": "Hyundai AutoEver (현대오토에버)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Statistics at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 11
+  },
+  {
+    "id": "jongseong-lim",
+    "name": "임종성 (Jongseong Lim)",
+    "position": "KDIC (예금보험공사)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 12
+  },
+  {
+    "id": "inhyuk-song",
+    "name": "송인혁 (Inhyuk Song)",
+    "position": "KFTC (금융결제원)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Computer Science and Engineering at PNU",
+      "phd": null
+    },
+    "displayOrder": 13
+  },
+  {
+    "id": "incheol-shin",
+    "name": "신인철 (Incheol Shin)",
+    "position": "HD Hyundai XiteSolution (HD현대사이트솔루션)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 14
+  },
+  {
+    "id": "taeyoung-kim",
+    "name": "김태영 (Taeyoung Kim)",
+    "position": "KSD (한국예탁결제원)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 15
+  },
+  {
+    "id": "seungtae-yoo",
+    "name": "유승태 (Seungtae Yoo)",
+    "position": "DB Insurance Co., Ltd. (DB손해보험)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Statistics at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 16
+  },
+  {
+    "id": "gwanghoon-jung",
+    "name": "정광훈 (Gwanghoon Jung)",
+    "position": "KT AI Research (KT AI연구소)",
+    "photo": {
+      "src": "images/alumni/정광훈.jpg",
+      "alt": "정광훈 (Gwanghoon Jung) 프로필 사진"
+    },
+    "education": {
+      "bs": "Industrial Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 17
+  },
+  {
+    "id": "yeonsu-han",
+    "name": "한연수 (Yeonsu Han)",
+    "position": "IMGTech (아이엠지테크)",
+    "photo": {
+      "src": "images/alumni/한연수.jpg",
+      "alt": "한연수 (Yeonsu Han) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 18
+  },
+  {
+    "id": "minwook-kim",
+    "name": "김민욱 (Minwook Kim)",
+    "position": "SAMSUNG Electronics Research (삼성전자)",
+    "photo": {
+      "src": "images/alumni/김민욱.jpg",
+      "alt": "김민욱 (Minwook Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 19
+  },
+  {
+    "id": "bokwang-hwang",
+    "name": "황보광 (Bokwang Hwang)",
+    "position": "KFTC (금융결제원)",
+    "photo": {
+      "src": "images/alumni/황보광.jpg",
+      "alt": "황보광 (Bokwang Hwang) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 20
+  },
+  {
+    "id": "dongil-kang",
+    "name": "강동길 (Dongil Kang)",
+    "position": null,
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Statistics and Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 21
+  },
+  {
+    "id": "jonghyun-bae",
+    "name": "배종현 (Jonghyun Bae)",
+    "position": "American Bureau of Shipping, ABS (미국선급협회)",
+    "photo": {
+      "src": "images/alumni/배종현.jpg",
+      "alt": "배종현 (Jonghyun Bae) 프로필 사진"
+    },
+    "education": {
+      "bs": "Naval Architecture and Ocean Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 22
+  },
+  {
+    "id": "subin-lee",
+    "name": "이수빈 (Subin Lee)",
+    "position": "HUG (주택도시보증공사)",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 23
+  },
+  {
+    "id": "seungyun-shin",
+    "name": "신승윤 (Seungyun Shin)",
+    "position": "Industrial Bank of Korea (IBK 기업은행)",
+    "photo": {
+      "src": "images/alumni/신승윤.jpg",
+      "alt": "신승윤 (Seungyun Shin) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 24
+  },
+  {
+    "id": "jiwon-lee",
+    "name": "이지원 (Jiwon Lee)",
+    "position": "MakinaRocks (마키나락스)",
+    "photo": {
+      "src": "images/alumni/이지원.jpg",
+      "alt": "이지원 (Jiwon Lee) 프로필 사진"
+    },
+    "education": {
+      "bs": "Environmental Engineering at PNU",
+      "ms": "Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "displayOrder": 25
+  }
+]

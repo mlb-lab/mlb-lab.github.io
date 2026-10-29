@@ -1,0 +1,38 @@
+[
+  {
+    "id": "01-multi-modal-ai-for-precision-medicine",
+    "title": "Multi-modal AI for Precision Medicine",
+    "image": null,
+    "description": [
+      "Integrating multimodal clinical data, including electronic health records (EHRs), physiological signals (e.g., ECG), and multi-omics data, to predict patient health outcomes, assess disease risk, and evaluate drug responses."
+    ],
+    "displayOrder": 1
+  },
+  {
+    "id": "02-graph-representation-learning-for-reasoning-in-biomedical-ai",
+    "title": "Graph representation learning for Reasoning in Biomedical AI",
+    "image": null,
+    "description": [
+      "Developing graph-based learning and reasoning methods to model complex biological relationships, integrate heterogeneous biomedical knowledge, and uncover novel disease mechanisms and therapeutic targets."
+    ],
+    "displayOrder": 2
+  },
+  {
+    "id": "03-large-language-model-for-drug-discovery",
+    "title": "Large Language Model for Drug Discovery",
+    "image": null,
+    "description": [
+      "Generative Binder Design: Leveraging transformer-based models and Monte Carlo tree search (MCTS) with interaction classifiers to generate and optimize mRNA and other binding partners. Sequence and Expression Optimization: Applying autoregressive transformers and contrastive learning to optimize mRNA and protein sequences for improved translation efficiency, expression, and therapeutic stability in human systems."
+    ],
+    "displayOrder": 3
+  },
+  {
+    "id": "04-knowledge-representation-reasoning-and-design-optimization-for-manufacturing",
+    "title": "Knowledge representation, Reasoning, and Design optimization for Manufacturing",
+    "image": null,
+    "description": [
+      "Knowledge Representation and Reasoning: Developing graph-based representations and reasoning methods to extract actionable insights from complex manufacturing data. Design Optimization: Leveraging generative models and data-driven optimization to improve product design, manufacturing processes, and operational performance."
+    ],
+    "displayOrder": 4
+  }
+]

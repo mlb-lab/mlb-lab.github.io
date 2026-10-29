@@ -1,0 +1,39 @@
+{
+  "title": "Machine Learning & Bioinformatics",
+  "hero": {
+    "label": "SONG'S LAB",
+    "welcome": "Welcome to Song Lab",
+    "principalInvestigator": "Principal Investigator Giltae Song, Ph.D.",
+    "headlineLines": ["Machine Learning", "& Bioinformatics"]
+  },
+  "aboutLabel": "ABOUT OUR LAB",
+  "aboutHeadline": "Advancing AI for Science and Industry.",
+  "researchLinkLabel": "Explore Our Research",
+  "researchKeywords": [
+    "Multimodal AI",
+    "Graph Learning",
+    "Generative AI",
+    "Knowledge Reasoning"
+  ],
+  "quickLinks": [
+    {
+      "pageId": "professor",
+      "title": "People",
+      "description": "Meet our professor and research team."
+    },
+    {
+      "pageId": "publications",
+      "title": "Publications",
+      "description": "Explore our published research."
+    },
+    {
+      "pageId": "news",
+      "title": "News",
+      "description": "Discover the latest from our lab."
+    }
+  ],
+  "introduction": [
+    "Our lab focuses on advancing artificial intelligence through machine learning, deep learning, and knowledge-driven reasoning. Our research spans multimodal AI for precision medicine, graph representation learning for biomedical discovery, large language models for drug discovery, and intelligent optimization for manufacturing.",
+    "By integrating heterogeneous data, developing innovative AI models, and exploring complex relationships, we aim to address real-world challenges and contribute to advances in healthcare, biotechnology, and industrial applications."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "addressLines": [
+    "Room 620, Building 102(IT Building)",
+    "School of Computer Science and Engineering",
+    "Pusan National University",
+    "2 Busandaehak-ro 63 beon-gil",
+    "Geumjeong-gu, Busan 46241",
+    "South Korea"
+  ],
+  "email": "gsong@pusan.ac.kr",
+  "emailDisplay": "gsong at pusan dot ac dot kr",
+  "phone": "+82 51-510-3644",
+  "mapUrl": null,
+  "mapQuery": "부산대학교 IT관"
+}
