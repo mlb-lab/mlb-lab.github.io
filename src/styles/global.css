@@ -306,11 +306,18 @@ main { flex: 1; min-width: 0; }
   margin-inline: auto;
   flex-shrink: 0;
   aspect-ratio: 4 / 5;
-  border-bottom: 4px solid var(--member-line);
+  border-bottom: 0;
   border-radius: 6px 6px 0 0;
   background: var(--member-background);
 }
-:is(.members-grid, .alumni-grid) .portrait img { object-fit: contain; }
+:is(.members-grid, .alumni-grid) .portrait img {   
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  object-fit: contain;
+  border-bottom: 4px solid var(--member-line); 
+}
 :is(.members-grid, .alumni-grid) .image-placeholder { border: 0; color: var(--member-secondary); }
 :is(.members-grid, .alumni-grid) .image-placeholder svg { stroke: var(--member-line); }
 :is(.members-grid, .alumni-grid) .person-details { display: flex; flex-direction: column; flex: 1; padding-top: 22px; }
