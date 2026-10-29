@@ -1,0 +1,450 @@
+[
+  {
+    "id": "pratama-rian-danis-adi",
+    "name": "Pratama Rian Danis Adi",
+    "position": "Postdoctoral Researcher",
+    "photo": {
+      "src": "images/members/리안.jpg",
+      "alt": "Pratama Rian Danis Adi 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at ITS",
+      "ms": null,
+      "phd": null
+    },
+    "email": "riandanisap at pusan dot ac dot kr",
+    "displayOrder": 1
+  },
+  {
+    "id": "jeonghoon-choi",
+    "name": "최정훈 (Jeonghoon Choi)",
+    "position": "Postdoctoral Researcher",
+    "photo": {
+      "src": "images/members/최정훈.jpg",
+      "alt": "최정훈 (Jeonghoon Choi) 프로필 사진"
+    },
+    "education": {
+      "bs": null,
+      "ms": null,
+      "phd": "Division of Artificial Intelligence at PNU"
+    },
+    "email": "jeonghoonchoi at pusan dot ac dot kr",
+    "displayOrder": 2
+  },
+  {
+    "id": "sanghun-sel",
+    "name": "설상훈 (Sanghun Sel)",
+    "position": "Ph.D. student",
+    "photo": {
+      "src": "images/members/설상훈.jpg",
+      "alt": "설상훈 (Sanghun Sel) 프로필 사진"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Statistics at PNU",
+      "phd": null
+    },
+    "email": "poohnim5 at naver dot com",
+    "displayOrder": 3
+  },
+  {
+    "id": "juseong-kim",
+    "name": "김주성 (Juseong Kim)",
+    "position": "Ph.D. student",
+    "photo": {
+      "src": "images/members/김주성.jpg",
+      "alt": "김주성 (Juseong Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Division of Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "email": "jusung03 at pusan dot ac dot kr",
+    "displayOrder": 4
+  },
+  {
+    "id": "kibeom-kim",
+    "name": "김기범 (Kibeom Kim)",
+    "position": "Ph.D. student",
+    "photo": {
+      "src": "images/members/김기범.jpg",
+      "alt": "김기범 (Kibeom Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Division of Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "email": "kkb1004tom at pusan dot ac dot kr",
+    "displayOrder": 5
+  },
+  {
+    "id": "felizmenio-edgardo-jr",
+    "name": "Felizmenio Edgardo Jr.",
+    "position": "Ph.D. student",
+    "photo": {
+      "src": "images/members/에드가.jpg",
+      "alt": "Felizmenio Edgardo Jr. 프로필 사진"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Computer Science at University of the Philippines",
+      "phd": null
+    },
+    "email": "edgarfelizmenio at gmail dot com",
+    "displayOrder": 6
+  },
+  {
+    "id": "keumseok-kang",
+    "name": "강금석 (Keumseok Kang)",
+    "position": "Ph.D. student",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Division of Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "email": "GoldRiver0 at pusan dot ac dot kr",
+    "displayOrder": 7
+  },
+  {
+    "id": "minsu-kim",
+    "name": "김민수 (Minsu Kim)",
+    "position": "Ph.D. student",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Division of Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "email": "rlaalstn0528 at gmail dot com",
+    "displayOrder": 8
+  },
+  {
+    "id": "jeongmu-kim",
+    "name": "김정무 (Jeongmu Kim)",
+    "position": "Researcher",
+    "photo": {
+      "src": "images/alumni/김정무.jpg",
+      "alt": "김정무 (Jeongmu Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Division of Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "email": "hansongkim at pusan dot ac dot kr",
+    "displayOrder": 9
+  },
+  {
+    "id": "hanul-park",
+    "name": "박한얼 (Hanul Park)",
+    "position": "Researcher",
+    "photo": {
+      "src": "images/alumni/박한얼.jpg",
+      "alt": "박한얼 (Hanul Park) 프로필 사진"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Division of Artificial Intelligence at PNU",
+      "phd": null
+    },
+    "email": "hanul.park at gmail dot com",
+    "displayOrder": 10
+  },
+  {
+    "id": "jahyun-kwak",
+    "name": "곽자현 (Jahyun Kwak)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/곽자현.jpg",
+      "alt": "곽자현 (Jahyun Kwak) 프로필 사진"
+    },
+    "education": {
+      "bs": "Molecular Biology at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "kwjh1004 at pusan dot ac dot kr",
+    "displayOrder": 11
+  },
+  {
+    "id": "kwangeun-kim",
+    "name": "김광은 (Kwangeun Kim)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/김광은.jpg",
+      "alt": "김광은 (Kwangeun Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": "Oceanography at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "kke0630 at pusan dot ac dot kr",
+    "displayOrder": 12
+  },
+  {
+    "id": "jaeyeon-kim",
+    "name": "김재연 (Jaeyeon Kim)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/김재연.jpg",
+      "alt": "김재연 (Jaeyeon Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Engineering at KHU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "kimgeni96 at gmail dot com",
+    "displayOrder": 13
+  },
+  {
+    "id": "sarsenbayeva-nuriya",
+    "name": "Sarsenbayeva Nuriya",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/누리야.jpg",
+      "alt": "Sarsenbayeva Nuriya 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "nuriya at pusan dot ac dot kr",
+    "displayOrder": 14
+  },
+  {
+    "id": "mingyeol-kim",
+    "name": "김민결 (Mingyeol Kim)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/김민결.jpg",
+      "alt": "김민결 (Mingyeol Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "mk7978 at naver dot com",
+    "displayOrder": 15
+  },
+  {
+    "id": "byeongjin-kim",
+    "name": "김병진 (Byeongjin Kim)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/김병진.jpg",
+      "alt": "김병진 (Byeongjin Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "kbj2kbj22 at naver dot com",
+    "displayOrder": 16
+  },
+  {
+    "id": "hwaseong-park",
+    "name": "박화성 (Hwaseong Park)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/박화성.jpg",
+      "alt": "박화성 (Hwaseong Park) 프로필 사진"
+    },
+    "education": {
+      "bs": "Biological Sciences at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "p2021770 at gmail dot com",
+    "displayOrder": 17
+  },
+  {
+    "id": "younguk-jo",
+    "name": "조영욱 (Younguk Jo)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/조영욱.jpg",
+      "alt": "조영욱 (Younguk Jo) 프로필 사진"
+    },
+    "education": {
+      "bs": "Mechanical Engineering at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "daehancho18 at gmail dot com",
+    "displayOrder": 18
+  },
+  {
+    "id": "jinyoung-kim",
+    "name": "김진영 (Jinyoung Kim)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/김진영.jpg",
+      "alt": "김진영 (Jinyoung Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "jin04133 at pusan dot ac dot kr",
+    "displayOrder": 19
+  },
+  {
+    "id": "jiyong-park",
+    "name": "박지용 (Jiyong Park)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/박지용.jpg",
+      "alt": "박지용 (Jiyong Park) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "qkrwldyd0902 at pusan dot ac dot kr",
+    "displayOrder": 20
+  },
+  {
+    "id": "nyi-nyi-htun",
+    "name": "Nyi Nyi Htun",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/니니툰.jpg",
+      "alt": "Nyi Nyi Htun 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "nyinyihtun at pusan dot ac dot kr",
+    "displayOrder": 21
+  },
+  {
+    "id": "hyebin-kim",
+    "name": "김혜빈 (Hyebin Kim)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/김혜빈.jpg",
+      "alt": "김혜빈 (Hyebin Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": "Data Science at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "alwayskimhb at gmail dot com",
+    "displayOrder": 22
+  },
+  {
+    "id": "heewoong-choi",
+    "name": "최희웅 (Heewoong Choi)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/최희웅.jpg",
+      "alt": "최희웅 (Heewoong Choi) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "dhw1966 at pusan dot ac dot kr",
+    "displayOrder": 23
+  },
+  {
+    "id": "jinwoo-kim",
+    "name": "김진우 (Jinwoo Kim)",
+    "position": "M.S. student",
+    "photo": {
+      "src": "images/members/김진우.jpg",
+      "alt": "김진우 (Jinwoo Kim) 프로필 사진"
+    },
+    "education": {
+      "bs": "Computer Science and Engineering at PNU",
+      "ms": null,
+      "phd": null
+    },
+    "email": "maureen272 at pusan dot ac dot kr",
+    "displayOrder": 24
+  },
+  {
+    "id": "juncheol-kim",
+    "name": "김준철 (Juncheol Kim)",
+    "position": "Part-time Ph.D. student",
+    "photo": {
+      "src": "images/members/김준철.jpg",
+      "alt": "김준철 프로필 사진"
+    },
+    "education": {
+      "bs": "Mechanical Engineering at POSTECH",
+      "ms": null,
+      "phd": null
+    },
+    "email": null,
+    "displayOrder": 25
+  },
+  {
+    "id": "sunil-cho",
+    "name": "조선일 (Sunil Cho)",
+    "position": "Part-time Ph.D. student",
+    "photo": {
+      "src": "images/alumni/기본 프로필.png",
+      "alt": "프로필 사진 미등록 — 기본 이미지"
+    },
+    "education": {
+      "bs": "Computer Science at KAIST",
+      "ms": null,
+      "phd": null
+    },
+    "email": "sunilcho at pusan dot ac dot kr",
+    "displayOrder": 26
+  },
+  {
+    "id": "joonyoung-sung",
+    "name": "성준영 (Joonyoung Sung)",
+    "position": "Part-time Ph.D. student",
+    "photo": {
+      "src": "images/members/성준영.jpg",
+      "alt": "성준영 (Joonyoung Sung) 프로필 사진"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Dept. of Mechanical Engineering at Handong Global University",
+      "phd": null
+    },
+    "email": "jy_sung at pusan dot ac dot kr",
+    "displayOrder": 27
+  },
+  {
+    "id": "ikgyun-lim",
+    "name": "임익균 (Ikgyun Lim)",
+    "position": "Part-time Ph.D. student",
+    "photo": {
+      "src": "images/members/임익균.jpg",
+      "alt": "임익균 (Ikgyun Lim) 프로필 사진"
+    },
+    "education": {
+      "bs": null,
+      "ms": "Computer Science at Yonsei University",
+      "phd": null
+    },
+    "email": "limikgyun at gmail dot com",
+    "displayOrder": 28
+  }
+]

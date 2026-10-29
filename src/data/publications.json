@@ -1,0 +1,2132 @@
+[
+  {
+    "id": "2026-circmac-microrna-conditioned-binding-site-localization-on-circular-rna-isoforms",
+    "title": [
+      {
+        "text": "circMAC: microRNA-conditioned binding-site localization on circular RNA isoforms"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Juseong Kim",
+        "underline": true
+      },
+      {
+        "text": "Sanghun Sel",
+        "underline": true
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "Briefings in Bioinformatics",
+        "italic": true
+      },
+      {
+        "text": ", 27:5 bbag492. 2026."
+      }
+    ],
+    "year": 2026,
+    "displayOrder": 1,
+    "url": "https://academic.oup.com/bib/article/27/5/bbag492/8789722"
+  },
+  {
+    "id": "2026-sctrans-svd-dual-view-learning-with-a-low-rank-representation-for-label-limited-cell-type-annotation-in-single-cell-transcriptomics",
+    "title": [
+      {
+        "text": "scTrans-SVD: dual-view learning with a low-rank representation for label-limited cell type annotation in single-cell transcriptomics"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Sanghun Sel",
+        "underline": true
+      },
+      {
+        "text": "Juseong Kim",
+        "underline": true
+      },
+      {
+        "text": "Jason Hilton"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "BioData Mining.",
+        "italic": true
+      },
+      {
+        "text": " 2026."
+      }
+    ],
+    "year": 2026,
+    "displayOrder": 2,
+    "url": "https://doi.org/10.1186/s13040-026-00602-9"
+  },
+  {
+    "id": "2026-enhancing-protein-expression-in-humans-through-codon-optimization-with-transformer-and-contrastive-learning",
+    "title": [
+      {
+        "text": "Enhancing Protein Expression in Humans through Codon Optimization with Transformer and Contrastive Learning"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Juseong Kim",
+        "underline": true
+      },
+      {
+        "text": "Jeongmu Kim",
+        "underline": true
+      },
+      {
+        "text": "Jae-Wook Lee"
+      },
+      {
+        "text": "Qian Qi"
+      },
+      {
+        "text": "Caroline Danehy"
+      },
+      {
+        "text": "Ho Young Kang"
+      },
+      {
+        "text": "Yong Cheng"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "Molecular Therapy Nucleic Acids",
+        "italic": true
+      },
+      {
+        "text": ", MTNA-D-25-00557R3. 2026."
+      }
+    ],
+    "year": 2026,
+    "displayOrder": 3,
+    "url": "https://www.cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(26)00162-9"
+  },
+  {
+    "id": "2026-libre-a-ligand-aware-sequence-based-binding-residue-prediction-model-for-virtual-screening",
+    "title": [
+      {
+        "text": "LiBRe: A Ligand-Aware Sequence-Based Binding Residue Prediction Model for Virtual Screening"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Keumseok Kang",
+        "underline": true
+      },
+      {
+        "text": "Mingyeol Kim",
+        "underline": true
+      },
+      {
+        "text": "Juseong Kim",
+        "underline": true
+      },
+      {
+        "text": "Sanghun Sel",
+        "underline": true
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "Journal of Chemical Information and Modeling",
+        "italic": true
+      },
+      {
+        "text": ", acs.jcim.5c02883. 2026."
+      }
+    ],
+    "year": 2026,
+    "displayOrder": 4,
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c02883"
+  },
+  {
+    "id": "2026-unsupervised-classification-of-wide-field-swept-source-optical-coherence-tomography-reveals-patterns-associated-with-glaucoma-severity-and-progression",
+    "title": [
+      {
+        "text": "Unsupervised Classification of Wide-Field Swept-Source Optical Coherence Tomography Reveals Patterns Associated With Glaucoma Severity and Progression"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Hwayeong Kim"
+      },
+      {
+        "text": "Sangwoo Moon"
+      },
+      {
+        "text": "EunAh Kim"
+      },
+      {
+        "text": "Jiwon Lee",
+        "underline": true
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Jiwoong Lee*"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Translational Vision Science & Technology",
+        "italic": true
+      },
+      {
+        "text": ", 15: 25. 2026."
+      }
+    ],
+    "year": 2026,
+    "displayOrder": 5,
+    "url": "https://tvst.arvojournals.org/article.aspx?articleid=2818708"
+  },
+  {
+    "id": "2025-learning-a-refinement-model-for-variant-analysis-in-non-human-primate-genomes",
+    "title": [
+      {
+        "text": "Learning a refinement model for variant analysis in non-human primate genomes"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Jeonghoon Choi",
+        "underline": true
+      },
+      {
+        "text": "Bo Zhou*"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "BMC Genomics",
+        "italic": true
+      },
+      {
+        "text": ", 26: 775. 2025."
+      }
+    ],
+    "year": 2025,
+    "displayOrder": 6,
+    "url": "https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-025-11921-2"
+  },
+  {
+    "id": "2025-enhancing-central-visual-field-loss-representation-with-a-hybrid-unsupervised-approach",
+    "title": [
+      {
+        "text": "Enhancing central visual field loss representation with a hybrid unsupervised approach"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Seungtae Yoo",
+        "underline": true
+      },
+      {
+        "text": "Sang Wook Jin"
+      },
+      {
+        "text": "Jung Lim Kim"
+      },
+      {
+        "text": "Jonghoon Shin"
+      },
+      {
+        "text": "Seung Uk Lee"
+      },
+      {
+        "text": "Jiwon Lee",
+        "underline": true
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Jiwoong Lee*"
+      }
+    ],
+    "venue": [
+      {
+        "text": "International Ophthalmology",
+        "italic": true
+      },
+      {
+        "text": ", 45: 317. 2025."
+      }
+    ],
+    "year": 2025,
+    "displayOrder": 7,
+    "url": "https://link.springer.com/article/10.1007/s10792-025-03672-6"
+  },
+  {
+    "id": "2025-gene-spatial-integration-enhancing-spatial-transcriptomics-analysis-via-deep-learning-and-batch-effect-mitigation",
+    "title": [
+      {
+        "text": "Gene spatial integration: enhancing spatial transcriptomics analysis via deep learning and batch effect mitigation"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Rian Pratama",
+        "underline": true
+      },
+      {
+        "text": "Jason Hilton"
+      },
+      {
+        "text": "J. Michael Cherry"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "Bioinformatics",
+        "italic": true
+      },
+      {
+        "text": ", 41 (6): btaf350. 2025."
+      }
+    ],
+    "year": 2025,
+    "displayOrder": 8,
+    "url": "https://academic.oup.com/bioinformatics/article/41/6/btaf350/8161564"
+  },
+  {
+    "id": "2025-therapeutic-gene-target-prediction-using-novel-deep-hypergraph-representation-learning",
+    "title": [
+      {
+        "text": "Therapeutic Gene Target Prediction Using Novel Deep Hypergraph Representation Learning"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Kibeom Kim",
+        "underline": true
+      },
+      {
+        "text": "Juseong Kim",
+        "underline": true
+      },
+      {
+        "text": "Minwook Kim",
+        "underline": true
+      },
+      {
+        "text": "Hyewon Lee"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "Briefings in Bioinformatics",
+        "italic": true
+      },
+      {
+        "text": ", 26 (1): bbaf019. 2025."
+      }
+    ],
+    "year": 2025,
+    "displayOrder": 9,
+    "url": "https://academic.oup.com/bib/article/26/1/bbaf019/7971740"
+  },
+  {
+    "id": "2024-detection-and-analysis-of-complex-structural-variation-in-human-genomes-across-populations-and-in-brains-of-donors-with-psychiatric-disorders",
+    "title": [
+      {
+        "text": "Detection and analysis of complex structural variation in human genomes across populations and in brains of donors with psychiatric disorders"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Bo Zhou*"
+      },
+      {
+        "text": "Joseph G. Arthur"
+      },
+      {
+        "text": "Hanmin Guo"
+      },
+      {
+        "text": "Taeyoung Kim",
+        "underline": true
+      },
+      {
+        "text": "Yiling Huang"
+      },
+      {
+        "text": "Reenal Pattni"
+      },
+      {
+        "text": "Tao Wang"
+      },
+      {
+        "text": "Soumya Kundu"
+      },
+      {
+        "text": "Jay X.J. Luo"
+      },
+      {
+        "text": "HoJoon Lee"
+      },
+      {
+        "text": "Daniel C. Nachun"
+      },
+      {
+        "text": "Carolin Purmann"
+      },
+      {
+        "text": "Emma M. Monte"
+      },
+      {
+        "text": "Annika K. Weimer"
+      },
+      {
+        "text": "Ping-Ping Qu"
+      },
+      {
+        "text": "Minyi Shi"
+      },
+      {
+        "text": "Lixia Jiang"
+      },
+      {
+        "text": "Xinqiong Yang"
+      },
+      {
+        "text": "John F. Fullard"
+      },
+      {
+        "text": "Jaroslav Bendl"
+      },
+      {
+        "text": "Kiran Girdhar"
+      },
+      {
+        "text": "Minsu Kim",
+        "underline": true
+      },
+      {
+        "text": "Xi Chen"
+      },
+      {
+        "text": "PsychENCODE Consortium"
+      },
+      {
+        "text": "William J. Greenleaf"
+      },
+      {
+        "text": "Laramie Duncan"
+      },
+      {
+        "text": "Hanlee P. Ji"
+      },
+      {
+        "text": "Xiang Zhu"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Stephen B. Montgomery"
+      },
+      {
+        "text": "Dean Palejev"
+      },
+      {
+        "text": "Heinrich zu Dohna"
+      },
+      {
+        "text": "Panos Roussos"
+      },
+      {
+        "text": "Anshul Kundaje"
+      },
+      {
+        "text": "Joachim F. Hallmayer"
+      },
+      {
+        "text": "Michael P. Snyder"
+      },
+      {
+        "text": "Wing H. Wong*"
+      },
+      {
+        "text": "Alexander E. Urban*"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Cell",
+        "italic": true
+      },
+      {
+        "text": ", DOI: 10.1016/j.cell.2024.09.014. 2024."
+      }
+    ],
+    "year": 2024,
+    "displayOrder": 10,
+    "url": "https://www.cell.com/cell/abstract/S0092-8674(24)01032-8"
+  },
+  {
+    "id": "2024-fuzzy-clustering-of-242-visual-field-patterns-can-detect-glaucoma-progression",
+    "title": [
+      {
+        "text": "Fuzzy clustering of 24–2 visual field patterns can detect glaucoma progression"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Hwayeong Kim"
+      },
+      {
+        "text": "Sangwoo Moon"
+      },
+      {
+        "text": "Joohwang Lee"
+      },
+      {
+        "text": "EunAh Kim"
+      },
+      {
+        "text": "Sang Wook Jin"
+      },
+      {
+        "text": "Jung Lim Kim"
+      },
+      {
+        "text": "Seung Uk Lee"
+      },
+      {
+        "text": "Jinmi Kim"
+      },
+      {
+        "text": "Seungtae Yoo",
+        "underline": true
+      },
+      {
+        "text": "Jiwon Lee",
+        "underline": true
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Jiwoong Lee*"
+      }
+    ],
+    "venue": [
+      {
+        "text": "PLoS ONE",
+        "italic": true
+      },
+      {
+        "text": ", 19(9): e0309011. 2024."
+      }
+    ],
+    "year": 2024,
+    "displayOrder": 11,
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0309011"
+  },
+  {
+    "id": "2024-acute-myocardial-infarction-prognosis-prediction-with-reliable-and-interpretable-artificial-intelligence-system",
+    "title": [
+      {
+        "text": "Acute myocardial infarction prognosis prediction with reliable and interpretable artificial intelligence system"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Minwook Kim",
+        "underline": true
+      },
+      {
+        "text": "Donggil Kang",
+        "underline": true
+      },
+      {
+        "text": "Min Sun Kim"
+      },
+      {
+        "text": "Jeong Cheon Choe"
+      },
+      {
+        "text": "Sun-Hack Lee"
+      },
+      {
+        "text": "Jin Hee Ahn"
+      },
+      {
+        "text": "Jun-Hyok Oh"
+      },
+      {
+        "text": "Jung Hyun Choi"
+      },
+      {
+        "text": "Han Cheol Lee"
+      },
+      {
+        "text": "Kwang Soo Cha"
+      },
+      {
+        "text": "Kyungtae Jang"
+      },
+      {
+        "text": "WooRI Bong"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Hyewon Lee*"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Journal of the American Medical Informatics Association",
+        "italic": true
+      },
+      {
+        "text": ", ocae114. 2024."
+      }
+    ],
+    "year": 2024,
+    "displayOrder": 12,
+    "url": "https://academic.oup.com/jamia/advance-article/doi/10.1093/jamia/ocae114/7683735"
+  },
+  {
+    "id": "2023-aptatrans-a-deep-neural-network-for-predicting-aptamer-protein-interaction-using-pretrained-encoders",
+    "title": [
+      {
+        "text": "AptaTrans: a deep neural network for predicting aptamer-protein interaction using pretrained encoders"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Incheol Shin",
+        "underline": true
+      },
+      {
+        "text": "Keumseok Kang",
+        "underline": true
+      },
+      {
+        "text": "Juseong Kim",
+        "underline": true
+      },
+      {
+        "text": "Sanghun Sel",
+        "underline": true
+      },
+      {
+        "text": "Jeonghoon Choi",
+        "underline": true
+      },
+      {
+        "text": "Jae-Wook Lee"
+      },
+      {
+        "text": "Ho Young Kang"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "BMC Bioinformatics",
+        "italic": true
+      },
+      {
+        "text": ", 24:447. 2023."
+      }
+    ],
+    "year": 2023,
+    "displayOrder": 13,
+    "url": "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05577-6"
+  },
+  {
+    "id": "2023-deepfold-enhancing-protein-structure-prediction-through-optimized-loss-functions-improved-template-features-and-re-optimized-energy-function",
+    "title": [
+      {
+        "text": "DeepFold: Enhancing Protein Structure Prediction through Optimized Loss Functions, Improved Template Features, and Re-optimized Energy Function"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Jae-Won Lee"
+      },
+      {
+        "text": "Jong-Hyun Won"
+      },
+      {
+        "text": "Seonggwang Jeon"
+      },
+      {
+        "text": "Yujin Choo"
+      },
+      {
+        "text": "Yubin Yeon"
+      },
+      {
+        "text": "Jin-Seon Oh"
+      },
+      {
+        "text": "Minsoo Kimm"
+      },
+      {
+        "text": "SeonHwa Kim"
+      },
+      {
+        "text": "InSuk Joung"
+      },
+      {
+        "text": "Cheongjae Jang"
+      },
+      {
+        "text": "Sung Jong Lee"
+      },
+      {
+        "text": "Tae Hyun Kim"
+      },
+      {
+        "text": "Kyong Hwan Jin"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Eun-Sol Kim"
+      },
+      {
+        "text": "Jejoong Yoo"
+      },
+      {
+        "text": "Eunok Paek"
+      },
+      {
+        "text": "Yung-Kyun Noh"
+      },
+      {
+        "text": "Keehyoung Joo"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Bioinformatics",
+        "italic": true
+      },
+      {
+        "text": ", btad712. 2023."
+      }
+    ],
+    "year": 2023,
+    "displayOrder": 14,
+    "url": "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad712/7443992"
+  },
+  {
+    "id": "2022-leqnet-light-earthquake-deep-neural-network-for-earthquake-detection-and-phase-picking",
+    "title": [
+      {
+        "text": "LEQNet: Light Earthquake Deep Neural Network for Earthquake Detection and Phase Picking"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Jongseong Lim",
+        "underline": true
+      },
+      {
+        "text": "Sunghun Jung"
+      },
+      {
+        "text": "Chan JeGal"
+      },
+      {
+        "text": "Gwanghoon Jung"
+      },
+      {
+        "text": "Jung Ho Yoo"
+      },
+      {
+        "text": "Jin Kyu Gahm"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "Frontiers in Earth Science",
+        "italic": true
+      },
+      {
+        "text": ", 10:848237. 2022."
+      }
+    ],
+    "year": 2022,
+    "displayOrder": 15,
+    "url": "https://www.frontiersin.org/articles/10.3389/feart.2022.848237/full"
+  },
+  {
+    "id": "2021-fastqcls-a-fastq-compressor-for-long-read-sequencing-via-read-reordering-using-a-novel-scoring-model",
+    "title": [
+      {
+        "text": "FastqCLS: a FASTQ Compressor for Long-read Sequencing via read reordering using a novel scoring model"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Dohyeon Lee",
+        "underline": true
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "Bioinformatics",
+        "italic": true
+      },
+      {
+        "text": ", btab696. 2021."
+      }
+    ],
+    "year": 2021,
+    "displayOrder": 16,
+    "url": "https://doi.org/10.1093/bioinformatics/btab696"
+  },
+  {
+    "id": "2021-predicting-aptamer-sequences-that-interact-with-target-proteins-using-an-aptamer-protein-interaction-classifier-and-a-monte-carlo-tree-search-approach",
+    "title": [
+      {
+        "text": "Predicting aptamer sequences that interact with target proteins using an aptamer-protein interaction classifier and a Monte Carlo tree search approach"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Gwangho Lee",
+        "underline": true
+      },
+      {
+        "text": "Gun Hyuk Jang"
+      },
+      {
+        "text": "Ho Young Kang"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "PLoS ONE",
+        "italic": true
+      },
+      {
+        "text": ", 16(6):e0253760. 2021."
+      }
+    ],
+    "year": 2021,
+    "displayOrder": 17,
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0253760"
+  },
+  {
+    "id": "2021-dnn-boost-somatic-mutation-identification-of-tumor-only-whole-exom-sequencing-data-using-deep-neural-network-and-xgboost",
+    "title": [
+      {
+        "text": "DNN-Boost: Somatic mutation identification of tumor-only whole-exom sequencing data using deep neural network and XGBoost"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Firda Aminy Maruf",
+        "underline": true
+      },
+      {
+        "text": "Rian Pratama",
+        "underline": true
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "Journal of Bioinformatics and Computational Biology",
+        "italic": true
+      },
+      {
+        "text": ", 2140017. 2021."
+      }
+    ],
+    "year": 2021,
+    "displayOrder": 18,
+    "url": "https://www.worldscientific.com/doi/abs/10.1142/S0219720021400175"
+  },
+  {
+    "id": "2021-authentication-of-differential-gene-expression-in-oral-squamous-cell-carcinoma-using-machine-learning-applications",
+    "title": [
+      {
+        "text": "Authentication of differential gene expression in oral squamous cell carcinoma using machine learning applications"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Rian Pratama",
+        "underline": true
+      },
+      {
+        "text": "Jae Joon Hwang"
+      },
+      {
+        "text": "Ji Hye Lee"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Hae Ryoun Park*"
+      }
+    ],
+    "venue": [
+      {
+        "text": "BMC Oral Health",
+        "italic": true
+      },
+      {
+        "text": ", 21:281. 2021."
+      }
+    ],
+    "year": 2021,
+    "displayOrder": 19,
+    "url": "https://bmcoralhealth.biomedcentral.com/articles/10.1186/s12903-021-01642-9"
+  },
+  {
+    "id": "2020-cnn-peaks-chip-seq-peak-detection-pipeline-using-convolution-neural-networks-that-imitate-human-visual-inspection",
+    "title": [
+      {
+        "text": "CNN-Peaks: ChIP-Seq peak detection pipeline using convolution neural networks that imitate human visual inspection"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Dongpin Oh",
+        "underline": true
+      },
+      {
+        "text": "J. Seth Strattan"
+      },
+      {
+        "text": "Junho Hur"
+      },
+      {
+        "text": "Jose Bento"
+      },
+      {
+        "text": "Alexander Eckehart Urban"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "J. Michael Cherry"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Scientific Reports",
+        "italic": true
+      },
+      {
+        "text": ", 10, 7933. 2020."
+      }
+    ],
+    "year": 2020,
+    "displayOrder": 20,
+    "url": "https://www.nature.com/articles/s41598-020-64655-4"
+  },
+  {
+    "id": "2020-chromosome-level-de-novo-assembly-of-the-pig-tailed-macaque-genome-using-linked-read-sequencing-and-hic-proximity-scaffolding",
+    "title": [
+      {
+        "text": "Chromosome-level de novo assembly of the pig-tailed macaque genome using linked-read sequencing and HiC proximity scaffolding"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Morteza Roodgar"
+      },
+      {
+        "text": "Afshin Babveyh"
+      },
+      {
+        "text": "Lan H Nguyen"
+      },
+      {
+        "text": "Wenyu Zhou"
+      },
+      {
+        "text": "Rahul Sinha"
+      },
+      {
+        "text": "Hayan Lee"
+      },
+      {
+        "text": "John B Hanks"
+      },
+      {
+        "text": "Mohan Avula"
+      },
+      {
+        "text": "Lihua Jiang"
+      },
+      {
+        "text": "Ruiqi Jian"
+      },
+      {
+        "text": "Hoyong Lee",
+        "underline": true
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Hassan Chaib"
+      },
+      {
+        "text": "Irv L Weissman"
+      },
+      {
+        "text": "Serafim Batzoglou"
+      },
+      {
+        "text": "Susan Holmes"
+      },
+      {
+        "text": "David G Smith"
+      },
+      {
+        "text": "Joseph L Mankowski"
+      },
+      {
+        "text": "Stefan Prost"
+      },
+      {
+        "text": "Michael P Snyder"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Giga Science",
+        "italic": true
+      },
+      {
+        "text": ", Vol 9(7):giaa069. 2020."
+      }
+    ],
+    "year": 2020,
+    "displayOrder": 21,
+    "url": "https://academic.oup.com/gigascience/article/9/7/giaa069/5869769"
+  },
+  {
+    "id": "2019-real-time-occupancy-prediction-in-a-large-exhibition-hall-using-deep-learning-approach",
+    "title": [
+      {
+        "text": "Real-time occupancy prediction in a large exhibition hall using deep learning approach"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Seonghyeon Kim",
+        "underline": true
+      },
+      {
+        "text": "Seokwoo Kang",
+        "underline": true
+      },
+      {
+        "text": "Kwang Ryel Ryu"
+      },
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "Energy and Buildings",
+        "italic": true
+      },
+      {
+        "text": ", Vol 199:216-222. 2019."
+      }
+    ],
+    "year": 2019,
+    "displayOrder": 22,
+    "url": "https://doi.org/10.1016/j.enbuild.2019.06.043"
+  },
+  {
+    "id": "2019-integrative-meta-assembly-pipeline-imap-chromosome-level-genome-assembler-combining-multiple-de-novo-assemblies",
+    "title": [
+      {
+        "text": "Integrative Meta-Assembly Pipeline (IMAP): Chromosome-level genome assembler combining multiple "
+      },
+      {
+        "text": "de novo",
+        "italic": true
+      },
+      {
+        "text": " assemblies"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Jongin Lee"
+      },
+      {
+        "text": "Juyeon Kim"
+      },
+      {
+        "text": "Seokwoo Kang",
+        "underline": true
+      },
+      {
+        "text": "Hoyong Lee",
+        "underline": true
+      },
+      {
+        "text": "Daehong Kwon"
+      },
+      {
+        "text": "Daehwan Lee"
+      },
+      {
+        "text": "Gregory I. Lang"
+      },
+      {
+        "text": "J. Michael Cherry"
+      },
+      {
+        "text": "Jaebum Kim"
+      }
+    ],
+    "venue": [
+      {
+        "text": "PLoS ONE",
+        "italic": true
+      },
+      {
+        "text": ", 14(8): e0221858. 2019."
+      }
+    ],
+    "year": 2019,
+    "displayOrder": 23,
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0221858"
+  },
+  {
+    "id": "2019-characterization-of-distinct-mutation-patterns-by-crispr-cas9-and-crisprcpf1-genome-editing-systems",
+    "title": [
+      {
+        "text": "Characterization of distinct mutation patterns by CRISPR-Cas9 and CRISPRCpf1 genome editing systems"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Taegeun Bae"
+      },
+      {
+        "text": "Woo Chang Hwang"
+      },
+      {
+        "text": "Dohyeon Lee",
+        "underline": true
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Junseok W Hur"
+      },
+      {
+        "text": "Junho K Hur"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Molecular & Cellular Toxicology",
+        "italic": true
+      },
+      {
+        "text": ", 15:383–389. 2019."
+      }
+    ],
+    "year": 2019,
+    "displayOrder": 24,
+    "url": "https://link.springer.com/article/10.1007/s13273-019-0041-9"
+  },
+  {
+    "id": "2019-haplotype-resolved-and-integrated-genome-analysis-of-encode-cell-line-hepg2",
+    "title": [
+      {
+        "text": "Haplotype-resolved and integrated genome analysis of ENCODE cell line HepG2"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Bo Zhou"
+      },
+      {
+        "text": "Steve S Ho"
+      },
+      {
+        "text": "Stephanie U Greer"
+      },
+      {
+        "text": "Noah Spies"
+      },
+      {
+        "text": "John M Bell"
+      },
+      {
+        "text": "Xianglong Zhang"
+      },
+      {
+        "text": "Xiaowei Zhu"
+      },
+      {
+        "text": "Joseph G Arthur"
+      },
+      {
+        "text": "Seunggyu Byeon",
+        "underline": true
+      },
+      {
+        "text": "Reenal Pattni"
+      },
+      {
+        "text": "Ishan Saha"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Hanlee P Ji"
+      },
+      {
+        "text": "Dimitri Perrin"
+      },
+      {
+        "text": "Wing H Wong"
+      },
+      {
+        "text": "Alexej Abyzov"
+      },
+      {
+        "text": "Alexander E Urban"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Nucleic Acids Research",
+        "italic": true
+      },
+      {
+        "text": ", Vol 47(8):3846-3861. 2019."
+      }
+    ],
+    "year": 2019,
+    "displayOrder": 25,
+    "url": "https://academic.oup.com/nar/article/47/8/3846/5377472"
+  },
+  {
+    "id": "2019-comprehensive-integrated-and-phased-whole-genome-analysis-of-the-primary-encode-cell-line-k562",
+    "title": [
+      {
+        "text": "Comprehensive, Integrated, and Phased Whole-Genome Analysis of the Primary ENCODE Cell Line K562"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Bo Zhou"
+      },
+      {
+        "text": "Steve S Ho"
+      },
+      {
+        "text": "Xiaowei Zhu"
+      },
+      {
+        "text": "Xianglong Zhang"
+      },
+      {
+        "text": "Noah Spies"
+      },
+      {
+        "text": "Seunggyu Byeon",
+        "underline": true
+      },
+      {
+        "text": "Joseph G Arthur"
+      },
+      {
+        "text": "Reenal Pattni"
+      },
+      {
+        "text": "Noa Ben-Efraim"
+      },
+      {
+        "text": "Michael S Haney"
+      },
+      {
+        "text": "Rajini R Haraksingh"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Dimitri Perrin"
+      },
+      {
+        "text": "Wing H Wong"
+      },
+      {
+        "text": "Alexej Abyzov"
+      },
+      {
+        "text": "Alexander E Urban"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Genome Research",
+        "italic": true
+      },
+      {
+        "text": ", Vol 29: 472-484. 2019"
+      }
+    ],
+    "year": 2019,
+    "displayOrder": 26,
+    "url": "https://genome.cshlp.org/content/29/3/472.abstract"
+  },
+  {
+    "id": "2018-privacy-preserving-compressed-reference-oriented-alignment-map-using-decentralized-storage",
+    "title": [
+      {
+        "text": "Privacy-Preserving Compressed Reference-Oriented Alignment Map Using Decentralized Storage"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Doo-Hee Hwang"
+      },
+      {
+        "text": "Seok-Hwan Choi"
+      },
+      {
+        "text": "Jin-Myeong Shin"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Yoon-Ho Choi"
+      }
+    ],
+    "venue": [
+      {
+        "text": "IEEE Access",
+        "italic": true
+      },
+      {
+        "text": ", Vol 6: 45990-46001. 2018."
+      }
+    ],
+    "year": 2018,
+    "displayOrder": 27,
+    "url": "https://ieeexplore.ieee.org/abstract/document/8438866"
+  },
+  {
+    "id": "2017-dispaq-distributed-profitable-area-query-from-big-taxi-trip-data",
+    "title": [
+      {
+        "text": "DISPAQ: Distributed Profitable-Area Query from Big Taxi Trip Data"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Fadhilah Kurnia Putri"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Joonho Kwon"
+      },
+      {
+        "text": "Praveen Rao"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Sensors",
+        "italic": true
+      },
+      {
+        "text": ", Vol 17(10):2201. 2017."
+      }
+    ],
+    "year": 2017,
+    "displayOrder": 28,
+    "url": "https://www.mdpi.com/1424-8220/17/10/2201/htm"
+  },
+  {
+    "id": "2016-integration-of-new-alternative-reference-strain-genome-sequences-into-the-saccharomyces-genome-database",
+    "title": [
+      {
+        "text": "Integration of new alternative reference strain genome sequences into the "
+      },
+      {
+        "text": "Saccharomyces",
+        "italic": true
+      },
+      {
+        "text": " Genome Database"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Rama Balakrishnan"
+      },
+      {
+        "text": "Gail Binkley"
+      },
+      {
+        "text": "Maria Costanzo"
+      },
+      {
+        "text": "Kyla Dalusag"
+      },
+      {
+        "text": "Stacia Engel"
+      },
+      {
+        "text": "Sage Hellerstedt"
+      },
+      {
+        "text": "Benjamin Hitz"
+      },
+      {
+        "text": "Kalpana Karra"
+      },
+      {
+        "text": "Rob Nash"
+      },
+      {
+        "text": "Kelley Paskov"
+      },
+      {
+        "text": "Travis Sheppard"
+      },
+      {
+        "text": "Marek Skrzypek"
+      },
+      {
+        "text": "Shuai Weng"
+      },
+      {
+        "text": "Edith Wong"
+      },
+      {
+        "text": "J. Michael Cherry"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Database (Oxford)",
+        "italic": true
+      },
+      {
+        "text": ", Vol. 2016: article ID baw074. 2016."
+      }
+    ],
+    "year": 2016,
+    "displayOrder": 29,
+    "url": "http://database.oxfordjournals.org/content/2016/baw074.full"
+  },
+  {
+    "id": "2016-from-one-to-many-expanding-the-saccharomyces-cerevisiae-reference-genome-panel",
+    "title": [
+      {
+        "text": "From one to many: Expanding the "
+      },
+      {
+        "text": "Saccharomyces cerevisiae",
+        "italic": true
+      },
+      {
+        "text": " reference genome panel"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Stacia Engel"
+      },
+      {
+        "text": "Shuai Weng"
+      },
+      {
+        "text": "Gail Binkley"
+      },
+      {
+        "text": "Kelley Paskov"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "J. Michael Cherry"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Database (Oxford)",
+        "italic": true
+      },
+      {
+        "text": ", Vol. 2016: article ID baw020. 2016."
+      }
+    ],
+    "year": 2016,
+    "displayOrder": 30,
+    "url": "http://database.oxfordjournals.org/content/2016/baw020.full"
+  },
+  {
+    "id": "2015-the-saccharomyces-genome-database-variant-viewer",
+    "title": [
+      {
+        "text": "The "
+      },
+      {
+        "text": "Saccharomyces",
+        "italic": true
+      },
+      {
+        "text": " Genome Database Variant Viewer"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Travis Sheppard"
+      },
+      {
+        "text": "Benjamin Hitz"
+      },
+      {
+        "text": "Stacia Engel"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Rama Balakrishnan"
+      },
+      {
+        "text": "Gail Binkley"
+      },
+      {
+        "text": "Maria Costanzo"
+      },
+      {
+        "text": "Kyla Dalusag"
+      },
+      {
+        "text": "Sage Hellerstedt"
+      },
+      {
+        "text": "Kalpana Karra"
+      },
+      {
+        "text": "Rob Nash"
+      },
+      {
+        "text": "Kelley Paskov"
+      },
+      {
+        "text": "Marek Skrzypek"
+      },
+      {
+        "text": "Shuai Weng"
+      },
+      {
+        "text": "Edith Wong"
+      },
+      {
+        "text": "J. Michael Cherry"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Nucleic Acids Research",
+        "italic": true
+      },
+      {
+        "text": ", 44 (D1): D698-D702. 2015."
+      }
+    ],
+    "year": 2015,
+    "displayOrder": 31,
+    "url": "https://nar.oxfordjournals.org/content/44/D1/D698"
+  },
+  {
+    "id": "2015-agape-automated-genome-analysis-pipeline-for-pan-genome-analysis-of-saccharomyces-cerevisiae",
+    "title": [
+      {
+        "text": "AGAPE (Automated Genome Analysis PipelinE) for pan-genome analysis of "
+      },
+      {
+        "text": "Saccharomyces cerevisiae",
+        "italic": true
+      }
+    ],
+    "authors": [
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Benjamin Dickins"
+      },
+      {
+        "text": "Janos Demeter"
+      },
+      {
+        "text": "Stacia Engel"
+      },
+      {
+        "text": "Jennifer Gallagher"
+      },
+      {
+        "text": "Kisurb Choe"
+      },
+      {
+        "text": "Barbara Dunn"
+      },
+      {
+        "text": "Michael Snyder"
+      },
+      {
+        "text": "J. Michael Cherry"
+      }
+    ],
+    "venue": [
+      {
+        "text": "PLoS ONE",
+        "italic": true
+      },
+      {
+        "text": ", 10(3):e0120671. 2015."
+      }
+    ],
+    "year": 2015,
+    "displayOrder": 32,
+    "url": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120671"
+  },
+  {
+    "id": "2012-revealing-mammalian-evolutionary-relationships-by-comparative-analysis-of-gene-clusters",
+    "title": [
+      {
+        "text": "Revealing mammalian evolutionary relationships by comparative analysis of gene clusters"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Cathy Riemer"
+      },
+      {
+        "text": "Benjamin Dickins"
+      },
+      {
+        "text": "Hie Lim Kim"
+      },
+      {
+        "text": "Louxin Zhang"
+      },
+      {
+        "text": "Yu Zhang"
+      },
+      {
+        "text": "Chih-Hao Hsu"
+      },
+      {
+        "text": "Ross Hardison"
+      },
+      {
+        "text": "NISC Comparative Sequencing Program"
+      },
+      {
+        "text": "Eric Green"
+      },
+      {
+        "text": "Webb Miller"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Genome Biology and Evolution",
+        "italic": true
+      },
+      {
+        "text": ", 4(4):586-601. 2012."
+      }
+    ],
+    "year": 2012,
+    "displayOrder": 33,
+    "url": "http://dx.doi.org/10.1093/gbe/evs032"
+  },
+  {
+    "id": "2011-conversion-events-in-gene-clusters",
+    "title": [
+      {
+        "text": "Conversion events in gene clusters"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Chih-Hao Hsu"
+      },
+      {
+        "text": "Cathy Riemer"
+      },
+      {
+        "text": "Yu Zhang"
+      },
+      {
+        "text": "Hie Lim Kim"
+      },
+      {
+        "text": "Federico Hoffmann"
+      },
+      {
+        "text": "Louxin Zhang"
+      },
+      {
+        "text": "Ross Hardison"
+      },
+      {
+        "text": "NISC Comparative Sequencing program"
+      },
+      {
+        "text": "Eric Green"
+      },
+      {
+        "text": "Webb Miller"
+      }
+    ],
+    "venue": [
+      {
+        "text": "BMC Evolutionary Biology",
+        "italic": true
+      },
+      {
+        "text": ", 11:226. 2011."
+      }
+    ],
+    "year": 2011,
+    "displayOrder": 34,
+    "url": "http://www.biomedcentral.com/1471-2148/11/226"
+  },
+  {
+    "id": "2011-a-user-s-guide-to-the-encyclopedia-of-dna-elements-encode",
+    "title": [
+      {
+        "text": "A user's guide to the encyclopedia of DNA elements (ENCODE)"
+      }
+    ],
+    "authors": [
+      {
+        "text": "The ENCODE Project Consortium",
+        "bold": true
+      }
+    ],
+    "venue": [
+      {
+        "text": "PLoS Biology",
+        "italic": true
+      },
+      {
+        "text": ", 9(4):e1001046. 2011."
+      }
+    ],
+    "year": 2011,
+    "displayOrder": 35,
+    "url": "http://www.plosbiology.org/article/info%3Adoi/10.1371/journal.pbio.1001046"
+  },
+  {
+    "id": "2011-evaluation-of-methods-for-detecting-conversion-events-in-gene-clusters",
+    "title": [
+      {
+        "text": "Evaluation of methods for detecting conversion events in gene clusters"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Chih-Hao Hsu"
+      },
+      {
+        "text": "Cathy Riemer"
+      },
+      {
+        "text": "Webb Miller"
+      }
+    ],
+    "venue": [
+      {
+        "text": "BMC Bioinformatics",
+        "italic": true
+      },
+      {
+        "text": ", 12(Suppl 1):S45. 2011. (Presented in the 9th Asia Pacific Bioinformatics Conference [APBC2011].)"
+      }
+    ],
+    "year": 2011,
+    "displayOrder": 36,
+    "url": "http://www.biomedcentral.com/1471-2105/12/S1/S45"
+  },
+  {
+    "id": "2010-cage-combinatorial-analysis-of-gene-cluster-evolution",
+    "title": [
+      {
+        "text": "CAGE: Combinatorial Analysis of Gene-cluster Evolution"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Louxin Zhang"
+      },
+      {
+        "text": "Tomas Vinar"
+      },
+      {
+        "text": "Webb Miller"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Journal of Computational Biology",
+        "italic": true
+      },
+      {
+        "text": ", 17(9):1227-1242. 2010."
+      }
+    ],
+    "year": 2010,
+    "displayOrder": 37,
+    "url": "http://www.liebertonline.com/doi/abs/10.1089/cmb.2010.0094"
+  },
+  {
+    "id": "2010-reconstructing-histories-of-complex-gene-clusters-on-a-phylogeny",
+    "title": [
+      {
+        "text": "Reconstructing histories of complex gene clusters on a phylogeny"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Tomas Vinar"
+      },
+      {
+        "text": "Brona Brejova"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Adam C. Siepel"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Journal of Computational Biology",
+        "italic": true
+      },
+      {
+        "text": ", 17(9):1267-1279. 2010."
+      }
+    ],
+    "year": 2010,
+    "displayOrder": 38,
+    "url": "http://www.liebertonline.com/doi/abs/10.1089/cmb.2010.0090"
+  },
+  {
+    "id": "2009-inferring-the-recent-duplication-history-of-a-gene-cluster",
+    "title": [
+      {
+        "text": "Inferring the recent duplication history of a gene cluster"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Giltae Song*",
+        "bold": true
+      },
+      {
+        "text": "Louxin Zhang"
+      },
+      {
+        "text": "Tomas Vinar"
+      },
+      {
+        "text": "Webb Miller"
+      }
+    ],
+    "venue": [
+      {
+        "text": "In F. D. Ciccarelli, I. Miklos, ed., Comparative Genomics, International Workshop ("
+      },
+      {
+        "text": "RECOMB-CG",
+        "italic": true
+      },
+      {
+        "text": "), 5817 volume of Lecture Notes in Bioinformatics, pp. 111-125, Budapest, September 2009. Springer. (Invited to Journal of Computational Biology.)"
+      }
+    ],
+    "year": 2009,
+    "displayOrder": 39,
+    "url": "http://www.springerlink.com/content/r122564615306311"
+  },
+  {
+    "id": "2009-reconstructing-histories-of-complex-gene-clusters-on-a-phylogeny",
+    "title": [
+      {
+        "text": "Reconstructing histories of complex gene clusters on a phylogeny"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Tomas Vinar"
+      },
+      {
+        "text": "Brona Brejova"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Adam Siepel"
+      }
+    ],
+    "venue": [
+      {
+        "text": "In F. D. Ciccarelli, I. Miklos, ed., Comparative Genomics, International Workshop ("
+      },
+      {
+        "text": "RECOMB-CG",
+        "italic": true
+      },
+      {
+        "text": "), 5817 volume of Lecture Notes in Bioinformatics, pp. 150-163, Budapest, September 2009. Springer. (Invited to Journal of Computational Biology.)"
+      }
+    ],
+    "year": 2009,
+    "displayOrder": 40,
+    "url": "http://www.springerlink.com/content/h317917448401127"
+  },
+  {
+    "id": "2009-evolutionary-history-reconstruction-for-mammalian-complex-gene-clusters",
+    "title": [
+      {
+        "text": "Evolutionary history reconstruction for mammalian complex gene clusters"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Yu Zhang"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Tomas Vinar"
+      },
+      {
+        "text": "Eric D. Green"
+      },
+      {
+        "text": "Adam Siepel"
+      },
+      {
+        "text": "Webb Miller"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Journal of Computational Biology",
+        "italic": true
+      },
+      {
+        "text": ", 16(8):1051-1070. 2009."
+      }
+    ],
+    "year": 2009,
+    "displayOrder": 41,
+    "url": "http://www.liebertonline.com/doi/abs/10.1089/cmb.2009.0040"
+  },
+  {
+    "id": "2009-simultaneous-history-reconstruction-for-complex-gene-clusters-in-multiple-species",
+    "title": [
+      {
+        "text": "Simultaneous history reconstruction for complex gene clusters in multiple species"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Yu Zhang"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Chih-Hao Hsu"
+      },
+      {
+        "text": "Webb Miller"
+      }
+    ],
+    "venue": [
+      {
+        "text": "Pacific Symposium on Biocomputing",
+        "italic": true
+      },
+      {
+        "text": ", 14:162-173(2009)."
+      }
+    ],
+    "year": 2009,
+    "displayOrder": 42,
+    "url": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2758231"
+  },
+  {
+    "id": "2008-reconstructing-the-evolutionary-history-of-complex-human-gene-clusters",
+    "title": [
+      {
+        "text": "Reconstructing the evolutionary history of complex human gene clusters"
+      }
+    ],
+    "authors": [
+      {
+        "text": "Yu Zhang"
+      },
+      {
+        "text": "Giltae Song",
+        "bold": true
+      },
+      {
+        "text": "Tomas Vinar"
+      },
+      {
+        "text": "Eric D. Green"
+      },
+      {
+        "text": "Adam Siepel"
+      },
+      {
+        "text": "Webb Miller"
+      }
+    ],
+    "venue": [
+      {
+        "text": "RECOMB",
+        "italic": true
+      },
+      {
+        "text": ", 4955 volume of Lecture Notes in Computer Science, pp. 29-49, Singapore, January 2008. Springer. (Invited to Journal of Computational Biology.)"
+      }
+    ],
+    "year": 2008,
+    "displayOrder": 43,
+    "url": "http://www.springerlink.com/content/941724112nru5467"
+  }
+]

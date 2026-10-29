@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.prerender-*/
+.env
+.env.*
+!.env.example
+*.local
+npm-debug.log*
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

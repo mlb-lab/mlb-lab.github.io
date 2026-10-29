@@ -1,0 +1,65 @@
+{
+  "id": "professor",
+  "name": "Giltae Song",
+  "affiliation": "Professor, School of Computer Science and Engineering, Pusan National University (Sep. 2016 - present)",
+  "photo": {
+    "src": "images/professor/교수님 사진.jpg",
+    "alt": "Giltae Song 교수 사진"
+  },
+  "biography": [],
+  "researchInterests": [],
+  "experience": [
+    {
+      "position": "Post-doctoral scholar",
+      "department": "Department of Genetics, School of Medicine",
+      "organization": "Stanford University",
+      "startDate": "2012-07",
+      "endDate": "2016-07",
+      "mentor": "Dr. Mike Cherry"
+    },
+    {
+      "position": "Postdoctoral researcher",
+      "department": "Center for Comparative Genomics and Bioinformatics",
+      "organization": "Pennsylvania State University",
+      "startDate": "2012-01",
+      "endDate": "2012-06",
+      "mentor": "Dr. Webb Miller"
+    },
+    {
+      "position": "Instructor",
+      "department": "Department of Computer Science",
+      "organization": "Korea Naval Academy, Korea"
+    }
+  ],
+  "education": {
+    "bs": {
+      "institution": "Seoul National University, Korea",
+      "department": "Computer Science"
+    },
+    "ms": {
+      "institution": "Seoul National University, Korea",
+      "department": "Computer Science and Engineering",
+      "advisor": "Dr. Kern Koh"
+    },
+    "phd": {
+      "institution": "Pennsylvania State University",
+      "department": "Computer Science and Engineering",
+      "year": 2011,
+      "advisor": "Dr. Webb Miller"
+    }
+  },
+  "email": "gsong@pusan.ac.kr",
+  "emailDisplay": "gsong at pusan dot ac dot kr",
+  "contact": {
+    "addressLines": [
+      "Room 620, Building 102(IT Building)",
+      "School of Computer Science and Engineering",
+      "Pusan National University",
+      "2, Busandaehak-ro 63 beon-gil",
+      "Geumjeong-gu, Busan 46241",
+      "Republic of Korea"
+    ],
+    "phone": "+82-51-510-2425"
+  },
+  "links": []
+}

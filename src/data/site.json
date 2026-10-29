@@ -1,0 +1,16 @@
+{
+  "name": "Machine Learning & Bioinformatics",
+  "subtitle": "Pusan National University",
+  "footer": {
+    "name": "MLB Lab",
+    "logo": {
+      "src": "images/home/MLB 로고.png",
+      "alt": "MLB Lab"
+    },
+    "affiliationLines": [
+      "School of Computer Science and Engineering",
+      "Pusan National University"
+    ],
+    "locationText": "Room 620 · IT Building"
+  }
+}

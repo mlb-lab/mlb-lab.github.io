@@ -1,0 +1,46 @@
+/* Faithful, scoped port of reference/song_lab_genomic_hero_v3.html.
+   The existing site Header overlays this scene; its original demo spacer stays. */
+.genomic-hero {
+  --genomic-navy: #061327;
+  --genomic-ice: #eaf5ff;
+  --genomic-muted: #b0c7df;
+  min-height: 100svh;
+  position: relative;
+  isolation: isolate;
+  background: radial-gradient(ellipse at 73% 40%, #183a61 0%, #0b203e 37%, #061327 76%);
+  overflow: hidden;
+  color: white;
+  font-family: Inter, Arial, sans-serif;
+  line-height: normal;
+  overflow-wrap: normal;
+}
+.genomic-scene { position: absolute; inset: 0; z-index: -2; pointer-events: none; }
+.genomic-canvas { position: absolute; inset: 0; }
+.genomic-scene canvas { display: block; width: 100%; height: 100%; }
+.genomic-vignette { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(90deg, rgba(5,17,35,.9) 0%, rgba(5,17,35,.71) 31%, rgba(5,17,35,.1) 66%, rgba(5,17,35,.1) 100%), linear-gradient(0deg, rgba(4,14,30,.46), transparent 23%, transparent 82%, rgba(4,14,30,.3)); }
+.genomic-header-space { height: 88px; }
+.genomic-main { max-width: 1500px; min-height: calc(100svh - 175px); margin: auto; display: flex; align-items: center; padding: 60px clamp(22px,8vw,124px) 95px; pointer-events: none; }
+.genomic-copy { max-width: 730px; position: relative; }
+.genomic-eyebrow { display: flex; align-items: center; gap: 13px; color: #9fc5e7; font-size: 12px; letter-spacing: .24em; text-transform: uppercase; font-weight: 600; margin-bottom: 24px; }
+.genomic-eyebrow::before { content: ''; width: 31px; height: 1px; background: #86c0ea; }
+.genomic-welcome { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(18px,2.1vw,26px); font-weight: 400; line-height: 1.4; letter-spacing: .01em; color: #dbeafa; margin: 0 0 10px; }
+.genomic-pi { margin: 0 0 31px; color: #a8c5de; font-size: clamp(13px,1.2vw,16px); letter-spacing: .055em; }
+.genomic-headline { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(43px,5.65vw,88px); line-height: 1.08; letter-spacing: -.046em; font-weight: 400; margin: 0; max-width: 850px; text-shadow: 0 7px 45px rgba(0,10,25,.45); }
+.genomic-headline em { font-style: normal; color: #b8dfff; }
+.genomic-underline { width: 88px; height: 2px; background: linear-gradient(90deg,#8dcafa,#66d9e8); margin: 32px 0 26px; }
+.genomic-fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: flex-end; pointer-events: none; opacity: .65; }
+.genomic-fallback svg { height: 90%; width: 65%; filter: drop-shadow(0 0 30px #3086b440); }
+/* Keep the desktop visualization below the existing overlay Header. */
+@media (min-width: 1051px) {
+  .genomic-scene { top: calc(var(--header-height) + 16px); }
+}
+@media (max-width: 800px) {
+  .genomic-header-space { height: 75px; }
+  .genomic-main { min-height: calc(100svh - 150px); padding: 65px 26px 130px; align-items: flex-end; }
+  .genomic-copy { max-width: 100%; }
+  .genomic-headline { font-size: clamp(41px,10vw,68px); }
+  .genomic-vignette { background: linear-gradient(0deg,rgba(5,17,35,.92) 0%,rgba(5,17,35,.6) 42%,rgba(5,17,35,.05) 95%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .genomic-hero * { scroll-behavior: auto !important; }
+}
