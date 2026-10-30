@@ -30,7 +30,7 @@
       }
     ],
     "year": 2026,
-    "displayOrder": 1,
+    "displayOrder": 3,
     "url": "https://academic.oup.com/bib/article/27/5/bbag492/8789722"
   },
   {
@@ -67,7 +67,7 @@
       }
     ],
     "year": 2026,
-    "displayOrder": 2,
+    "displayOrder":4,
     "url": "https://doi.org/10.1186/s13040-026-00602-9"
   },
   {
@@ -79,15 +79,15 @@
     ],
     "authors": [
       {
-        "text": "Juseong Kim",
+        "text": "Juseong Kim†",
         "underline": true
       },
       {
-        "text": "Jeongmu Kim",
+        "text": "Jeongmu Kim†",
         "underline": true
       },
       {
-        "text": "Jae-Wook Lee"
+        "text": "Jae-Wook Lee†"
       },
       {
         "text": "Qian Qi"
@@ -116,7 +116,7 @@
       }
     ],
     "year": 2026,
-    "displayOrder": 3,
+    "displayOrder": 2,
     "url": "https://www.cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(26)00162-9"
   },
   {
@@ -158,7 +158,7 @@
       }
     ],
     "year": 2026,
-    "displayOrder": 4,
+    "displayOrder": 1,
     "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c02883"
   },
   {

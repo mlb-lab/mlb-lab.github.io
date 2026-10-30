@@ -266,6 +266,19 @@ test('publication layout retains title, authors, venue order without adding a se
   assert(page.includes('publication-note') && page.includes("PNU students&#x27; names"));
 });
 
+test('publication co-first author daggers render as superscripts with formatting and automatic punctuation', () => {
+  const item = {
+    title: [{ text: 'Title' }],
+    authors: [{ text: 'Author A†', underline: true }, { text: 'Author B*†', bold: true }],
+    venue: [{ text: 'Journal. 2026.' }],
+  };
+  const html = renderToStaticMarkup(createElement(PublicationItem, { item }));
+  assert(html.includes('<p class="publication-authors"><u>Author A<sup>†</sup></u>, <strong>Author B*<sup>†</sup></strong>.</p>'));
+  assert(renderPage('/publications/').includes('<sup>†</sup> co-first authors'));
+  const news = renderToStaticMarkup(createElement(NewsBody, { paragraphs: [[{ text: 'Author†' }, { text: '†', superscript: true }]] }));
+  assert(news.includes('Author†<sup>†</sup>') && !news.includes('<sup><sup>'));
+});
+
 test('null images use a labelled placeholder and populated images use the configured base', () => {
   assert(renderToStaticMarkup(createElement(ImageSlot)).includes('이미지 등록 예정'));
   const html = renderToStaticMarkup(createElement(ImageSlot, { image: { src: 'images/example.webp', alt: '예시 사진' } }));
