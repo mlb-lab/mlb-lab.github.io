@@ -149,15 +149,39 @@ test('ordering is deterministic and never mutates imported content', () => {
   assert.deepEqual(rows, original);
 });
 
+test('publications sort years and displayOrder descending without changing other collections or source data', () => {
+  const rows = [
+    { id: 'one', year: 2026, displayOrder: 1 },
+    { id: 'two', year: 2026, displayOrder: 2 },
+    { id: 'three', year: 2026, displayOrder: 3 },
+    { id: 'four', year: 2026, displayOrder: 4 },
+    { id: 'five', year: 2026, displayOrder: 5 },
+    { id: 'older', year: 2025, displayOrder: 99 },
+    { id: 'c', year: 2025 },
+    { id: 'b', year: 2025, displayOrder: null },
+    { id: 'a', year: 2025, displayOrder: 0 },
+  ];
+  const original = structuredClone(rows);
+  rows.forEach(Object.freeze);
+  Object.freeze(rows);
+
+  const groups = groupPublications(rows);
+  assert.deepEqual(groups.map((group) => group.year), [2026, 2025]);
+  assert.deepEqual(groups[0].items.map((item) => item.displayOrder), [5, 4, 3, 2, 1]);
+  assert.deepEqual(groups[1].items.map((item) => item.id), ['older', 'a', 'b', 'c']);
+  assert.deepEqual(byDisplayOrder(rows.filter((item) => item.year === 2026)).map((item) => item.displayOrder), [1, 2, 3, 4, 5]);
+  assert.deepEqual(rows, original);
+});
+
 test('publication runs accept supported boolean marks and separator spaces only', () => {
   assert.deepEqual(validate((data) => {
-    data.publications[0].authors = [{ text: 'A', bold: true, underline: true }, { text: 'B*', italic: false }];
+    data.publications[0].authors = [{ text: 'A†', bold: true, underline: true }, { text: 'B*†', italic: false }];
     data['publications-note'] = [];
   }), []);
   for (const title of ['plain string', [], [{ text: '' }], [{ text: ' ' }], [{ text: 'Title', bold: 'true' }], [{ text: 'Title', html: '<b>Title</b>' }]]) {
     assert(validate((data) => { data.publications[0].title = title; }).some((error) => error.includes('publications.json[0].title')));
   }
-  for (const text of [', ', '.', ' ', '*']) {
+  for (const text of [', ', '.', ' ', '*', '†']) {
     assert(validate((data) => { data.publications[0].authors = [{ text }]; }).some((error) => error.includes('.authors[0].text')));
   }
 });

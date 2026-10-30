@@ -5,7 +5,7 @@
 ## 공통 값
 
 - **ID:** 소문자·숫자·하이픈, 같은 목록에서 고유해야 합니다.
-- **displayOrder:** 선택 0 이상의 정수. 생략하면 0이며, 같으면 ID순입니다.
+- **displayOrder:** 선택 0 이상의 정수. 생략하면 0이며, 같으면 ID순입니다. 연구원·연구 분야는 오름차순, 논문은 같은 연도 안에서 내림차순으로 표시합니다.
 - **Image:** `null` 또는 `{ "src": "images/people/photo.webp", "alt": "사진 설명" }`. src는 null도 허용합니다. alt는 필수이며 빈 문자열은 허용하지 않습니다. 이미지는 public에 직접 추가하세요.
 - **Members·Alumni 사진:** 사진 영역은 최대 너비 300px, 4:5 비율로 카드 가운데 정렬하며, 좁은 화면에서는 가용 너비에 맞춰 줄어듭니다. contain으로 원본 전체를 표시하므로 비율이 다른 사진에는 여백이 생길 수 있습니다. Members의 photo 객체에는 선택적으로 `"objectPosition": "50% 10%"`을 추가할 수 있습니다. 첫 값은 가로, 둘째 값은 세로 기준점입니다. 기본은 `50% 20%`이며 `center top`이나 0~100% 범위의 백분율 두 개를 지원합니다. contain에서는 사진이 잘리는 대신 영역 안에서 정렬 위치가 바뀝니다. 이 선택 필드는 Members 전용이며 Professor·Alumni의 데이터 형식은 유지합니다.
 - **Members/Alumni education:** 선택 객체이며 bs, ms, phd는 각각 통합 문자열 또는 null입니다. 예: `{ "bs": "Computer Science and Engineering at PNU", "ms": null, "phd": null }`. 키를 생략해도 됩니다. 입력한 문자열이 그대로 표시되며 빈 문자열·숫자·기존 institution/department/year 객체는 허용하지 않습니다. 미입력 학위는 숨깁니다. 연도 등 추가 정보도 문자열 안에 입력합니다.
@@ -61,7 +61,8 @@ News images는 Image 객체의 배열입니다. 배열 안에 null을 넣지 말
     { "text": " methods" }
   ],
   "authors": [
-    { "text": "Student Name", "underline": true },
+    { "text": "Student A†", "underline": true },
+    { "text": "Student B†", "underline": true },
     { "text": "Professor Name*", "bold": true }
   ],
   "venue": [
@@ -75,6 +76,9 @@ News images는 Image 객체의 배열입니다. 배열 안에 null을 넣지 말
 ```
 
 - authors는 원문의 저자 순서, 표기, 교신저자 별표(*)를 유지합니다. 밑줄·굵게는 사람 이름을 보고 자동 추정하지 않습니다.
+- 공동 1저자는 해당 저자 이름 뒤에 `†`를 직접 입력합니다. 예: `{ "text": "Author Name†", "underline": true }`. 공동 1저자 모두에게 표시하며, 교신저자를 겸하면 `Author Name*†`처럼 입력할 수 있습니다. `†`를 별도의 저자 항목으로 추가하지 않습니다. 밑줄·굵게와 자동 쉼표·마침표는 그대로 적용됩니다. 실제 논문의 공동 1저자 여부를 확인한 뒤 입력하세요. 상단의 `† co-first authors` 안내는 publications-note.json에서 관리합니다.
+- Publications의 저자 이름과 상단 안내에 있는 `†`는 자동으로 위첨자로 표시합니다. 크기·높이는 global.css의 `.publication-authors sup, .publication-note sup`에서 조정합니다. 기본 크기는 주변 글씨의 70%이며 JSON 형식은 변경하지 않습니다.
+- 논문은 연도 내림차순이며, 같은 연도에서는 displayOrder가 큰 값부터 표시합니다. 예를 들어 1~5인 경우 화면 순서는 5 → 4 → 3 → 2 → 1입니다. JSON 배열 자체의 원문 순서는 변경하지 않습니다.
 - venue에는 학술지명·권호·페이지·연도·발표/초청 설명까지 입력합니다. year는 연도별 분류에만 사용하므로 화면에서 연도를 추가로 붙이지 않습니다. 제목 → 저자 → 학술지 순서는 유지합니다.
 - 링크는 url에 http(s) 절대 주소로 입력합니다. 원문 링크가 DOI URL인 경우에도 url에 그대로 넣으며 별도 doi/pdfPath 필드는 사용하지 않습니다. url이 없으면 링크 버튼은 숨깁니다.
 - 목록 위의 서식 안내는 publications-note.json에서 같은 배열 형식으로 관리합니다. []로 두면 숨깁니다.
@@ -91,7 +95,7 @@ python scripts/import-publications.py --input tests/fixtures/publications-source
 python -m unittest discover -s tests -p test_import_publications.py -v
 ```
 
-첫 명령은 두 JSON 파일을 덮어쓰므로 수동 편집 후 재실행할 때 주의하세요. 두 번째 명령은 원문 보존 감사용 테스트입니다. 제공된 43개 항목을 의도적으로 정정한다면 원문 참조와 함께 검토해야 하며, 별도의 신규 논문 추가는 허용합니다. 평소에는 JSON에 새 항목을 추가하고 `npm run validate`, `npm test`, `npm run build`로 확인하면 됩니다.
+첫 명령은 두 JSON 파일을 덮어쓰므로 수동 편집 후 재실행할 때 주의하세요. 두 번째 명령은 원문 보존 감사용 테스트이며, 화면 정렬용 displayOrder 변경과 원문 안내 뒤에 새 안내를 추가하는 것은 허용합니다. 제공된 43개 항목의 저자·서지 내용을 의도적으로 정정한다면 원문 참조와 함께 검토해야 하며, 별도의 신규 논문 추가는 허용합니다. 평소에는 JSON에 새 항목을 추가하고 `npm run validate`, `npm test`, `npm run build`로 확인하면 됩니다.
 
 ## 입력 예시
 

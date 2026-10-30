@@ -25,6 +25,15 @@ class ImportPublicationsTest(unittest.TestCase):
         self.assertEqual(paper["year"], 2026)
         self.assertEqual(note[0], {"text": "Students", "underline": True})
 
+    def test_dagger_characters_and_entities_are_preserved_in_authors(self):
+        html = '''<p class="mt40"><u>Author A&dagger;</u>, <strong>Author B*†</strong>.
+<a href="https://example.org/paper">Title</a>. Journal. 2026.</p>'''
+        papers, _ = IMPORTER.convert_html(html)
+        self.assertEqual(papers[0]["authors"], [
+            {"text": "Author A†", "underline": True},
+            {"text": "Author B*†", "bold": True},
+        ])
+
     def test_supplied_43_records_match_source_text_links_order_and_saved_json(self):
         html = (ROOT / "tests/fixtures/publications-source.html").read_text(encoding="utf-8-sig")
         source = IMPORTER.PublicationParser()
@@ -48,8 +57,12 @@ class ImportPublicationsTest(unittest.TestCase):
                 self.assertEqual(words(" ".join(run["text"] for run in paper["authors"] if run.get(mark))), words(" ".join(chunk["text"] for chunk in raw["authors"] if chunk.get(mark))))
             self.assertEqual(paper["url"], raw["url"])
             self.assertEqual(paper["displayOrder"], order)
-            self.assertEqual(by_id[paper["id"]], paper)
-        self.assertEqual(json.loads((ROOT / "src/data/publications-note.json").read_text(encoding="utf-8")), note)
+            # Display metadata may be edited independently of source bibliographic content.
+            self.assertEqual({key: value for key, value in by_id[paper["id"]].items() if key != "displayOrder"},
+                             {key: value for key, value in paper.items() if key != "displayOrder"})
+        # Keep the source notice intact while allowing an additional authorship legend.
+        saved_note = json.loads((ROOT / "src/data/publications-note.json").read_text(encoding="utf-8"))
+        self.assertEqual(saved_note[:len(note)], note)
         self.assertEqual(sum(p["year"] == 2026 for p in papers), 5)
         self.assertTrue(any(run.get("bold") and "The ENCODE Project Consortium" in run["text"] for p in papers for run in p["authors"]))
         self.assertTrue(any(run.get("italic") and "de novo" in run["text"] for p in papers for run in p["title"]))

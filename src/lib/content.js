@@ -13,7 +13,11 @@ export function byDisplayOrder(items) {
 
 export function groupPublications(items) {
   const years = [...new Set(items.map((item) => item.year))].sort((a, b) => b - a);
-  return years.map((year) => ({ year, items: byDisplayOrder(items.filter((item) => item.year === year)) }));
+  return years.map((year) => ({
+    year,
+    items: items.filter((item) => item.year === year)
+      .sort((a, b) => (b.displayOrder ?? 0) - (a.displayOrder ?? 0) || a.id.localeCompare(b.id)),
+  }));
 }
 
 export function sortNews(items) {

@@ -7,7 +7,7 @@ import { groupPublications } from '../lib/content.js';
 
 export function PublicationAuthors({ authors }) {
   return <>{authors.map((author, index) => <Fragment key={index}>
-    {index > 0 && ', '}<InlineText runs={[author]} />
+    {index > 0 && ', '}<InlineText runs={[author]} superscriptDaggers />
   </Fragment>)}{authors.length > 0 && !authors.at(-1).text.trimEnd().endsWith('.') && '.'}</>;
 }
 
@@ -23,7 +23,7 @@ export function PublicationItem({ item }) {
 export default function PublicationsPage() {
   const groups = groupPublications(publications);
   return <div className="container page"><PageHeading title="Publications"  />
-    {publicationNote.length > 0 && <p className="publication-note"><InlineText runs={publicationNote} /></p>}
+    {publicationNote.length > 0 && <p className="publication-note"><InlineText runs={publicationNote} superscriptDaggers /></p>}
     {groups.length ? <div className="publication-groups">{groups.map((group) => <section className="publication-year" key={group.year} aria-labelledby={`year-${group.year}`}>
       <h2 id={`year-${group.year}`}>{group.year}</h2><ol>{group.items.map((item) => <PublicationItem key={item.id} item={item} />)}</ol>
     </section>)}</div> : <EmptyState />}

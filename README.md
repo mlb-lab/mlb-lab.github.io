@@ -57,7 +57,7 @@ Members와 Alumni는 `:is(.members-grid, .alumni-grid)` 아래의 같은 회색 
 
 - 모든 파일은 UTF-8 JSON으로 저장합니다. JSON에는 주석이나 마지막 쉼표를 사용하지 않습니다.
 - `id`는 목록 안에서 고유한 소문자·숫자·하이픈 문자열입니다. 기존 항목 ID는 가급적 유지합니다.
-- 연구원·연구 분야는 `displayOrder` 오름차순, 논문은 연도 내림차순과 같은 연도 내 `displayOrder` 오름차순입니다.
+- 연구원·연구 분야는 `displayOrder` 오름차순, 논문은 연도 내림차순과 같은 연도 내 `displayOrder` 내림차순입니다. 논문은 같은 연도에서 값이 클수록 위에 표시됩니다.
 - News 날짜는 **실제 날짜인 `YYYY-MM-DD`**로 저장합니다. 날짜 내림차순으로 전문과 모든 사진을 표시합니다. 같은 날짜는 ID 순서로 고정됩니다.
 - 입력하지 않은 선택 필드는 생략하거나 `null`로 둡니다. 빈 문자열 대신 `null`을 사용하세요. Members/Alumni의 Position·학위·Email은 값이 있을 때만 표시됩니다.
 - Members와 Alumni의 education은 `"bs": "대학명, 학과명, 졸업 연도"`처럼 bs/ms/phd마다 통합 문자열을 입력합니다. 값이 없으면 null로 두세요. Professor는 기존 학위 객체 형식을 유지합니다.
@@ -65,6 +65,7 @@ Members와 Alumni는 `:is(.members-grid, .alumni-grid)` 아래의 같은 회색 
 - 사진은 `public/images/` 아래에 넣고 JSON에는 `images/people/name.webp`처럼 **public을 제외한 상대 경로**를 씁니다. PDF는 `public/files/`와 `files/paper.pdf`를 사용합니다. 한글·단어 사이 공백도 지원하며 JSON에는 URL 인코딩하지 않은 원래 파일명을 입력합니다. 영문·숫자·하이픈·밑줄을 권장하고 대소문자를 정확히 맞춥니다. 예약문자·역슬래시·상위 경로는 허용하지 않습니다.
 - 외부 링크는 http(s) URL로 입력합니다. Publications의 논문 링크는 url 하나로 관리합니다. 이미지 파일의 실제 존재와 대소문자는 검증하지만 외부 서버 응답·논문 진위는 자동 검증하지 않습니다.
 - Publications의 title/venue는 서식 조각 배열이고, authors는 저자 한 명당 `{ "text": "이름", "bold": true, "underline": true, "italic": true }` 한 항목인 목록입니다. 필요한 서식만 지정합니다. 저자 사이 쉼표와 마지막 마침표는 자동으로 표시하므로 별도 항목으로 입력하지 않습니다. year는 연도별 분류용이고 venue에는 표시할 연도와 추가 설명까지 입력합니다. 목록 위 서식 안내는 `publications-note.json`에서 관리합니다. HTML을 직접 삽입하지 않습니다.
+- 공동 1저자는 확인된 저자의 text 끝에 `†`를 붙입니다. 예: `{ "text": "Author Name†", "underline": true }`. 교신저자 `*`와 함께 사용할 수도 있습니다. `† co-first authors` 안내는 `publications-note.json`에서 수정합니다.
 - 예시 배지와 초기 버전 안내는 제거했습니다. 콘텐츠에는 확인된 자료만 입력하며 별도 샘플 여부 필드는 사용하지 않습니다.
 - 뉴스는 `NewsFeed`와 `NewsPost`로 분리되어 있습니다. 향후 정렬된 게시물의 일부를 Feed에 전달하고 더 보기 버튼을 추가할 수 있습니다.
 

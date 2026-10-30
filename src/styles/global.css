@@ -171,6 +171,7 @@ main { flex: 1; min-width: 0; }
 .publication-venue { font-size: 14px; margin-top: 6px; }
 .publication-links { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 16px; font-size: 13px; }
 .publication-note { margin-bottom: 32px; text-align: right; color: var(--color-muted); font-size: 14px; line-height: 1.8; }
+.publication-authors sup, .publication-note sup { font-size: 0.7em; vertical-align: super; line-height: 0; }
 .publication-item u, .publication-note u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .publication-item strong, .publication-note strong { font-weight: 700; }
 .publication-item em, .publication-note em { font-style: italic; }
