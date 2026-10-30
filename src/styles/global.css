@@ -180,8 +180,10 @@ main { flex: 1; min-width: 0; }
 .news-content h2 { font-size: clamp(23px, 2.8vw, 30px); margin-bottom: 24px; }
 .news-body p { white-space: pre-line; }
 .news-body u { text-underline-offset: 3px; }
-.news-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 16px; margin-top: 30px; max-width: 1532px; }
-.news-gallery .image-slot { width: 100%; max-width: 500px; }
+.news-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 16px; margin-top: 30px; max-width: 1532px; align-items: start; }
+.news-gallery .image-slot { width: 100%; max-width: 500px; aspect-ratio: auto; background: transparent; }
+.news-gallery .image-slot img { width: 100%; height: auto; object-fit: contain; }
+.news-gallery .image-placeholder { height: auto; aspect-ratio: 3 / 2; }
 .news-gallery.single { grid-template-columns: minmax(0, 500px); }
 
 /* Contact and footer */
