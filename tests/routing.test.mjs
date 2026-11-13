@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { findPage, pagePath, pageTitle } from '../src/app/routes.js';
+import { pages, findPage, pagePath, pageTitle, pageDescription } from '../src/app/routes.js';
 import { normalizeBase, routerBasename, deployedPath, legacyHashUrl } from '../src/lib/routing.js';
 
 test('base and basename agree for Organization and project sites', () => {
@@ -12,11 +12,41 @@ test('base and basename agree for Organization and project sites', () => {
   for (const invalid of ['.', './', '//', 'https://example.org/', '/lab/../', '/lab?query=1']) assert.throws(() => normalizeBase(invalid));
 });
 
-test('page metadata tolerates either trailing-slash form', () => {
+test('all page SEO titles and descriptions tolerate either trailing-slash form', () => {
   assert.equal(findPage('/news').id, 'news');
   assert.equal(findPage('/news/').id, 'news');
   assert.equal(pagePath('members'), '/people/members/');
-  assert.equal(pageTitle('/news/', 'MLB Lab'), 'News | MLB Lab');
+  const expectedTitles = [
+    ['/', 'MLB Lab | Prof. Giltae Song | Machine Learning & Bioinformatics'],
+    ['/people/professor/', 'Prof. Giltae Song | MLB Lab'],
+    ['/people/members/', 'Members | MLB Lab | Prof. Giltae Song'],
+    ['/people/alumni/', 'Alumni | MLB Lab | Prof. Giltae Song'],
+    ['/research/', 'Research | MLB Lab | Prof. Giltae Song'],
+    ['/publications/', 'Publications | MLB Lab | Prof. Giltae Song'],
+    ['/news/', 'News | MLB Lab | Prof. Giltae Song'],
+    ['/contact/', 'Contact | MLB Lab | Prof. Giltae Song'],
+  ];
+  assert.deepEqual(expectedTitles.map(([path]) => path), pages.map((page) => page.path));
+  const descriptions = [];
+  for (const [path, title] of expectedTitles) {
+    const withoutTrailingSlash = path === '/' ? '/' : path.slice(0, -1);
+    assert.equal(pageTitle(path), title, path);
+    assert.equal(pageTitle(withoutTrailingSlash), title, withoutTrailingSlash);
+    const description = pageDescription(path);
+    assert.equal(typeof description, 'string', path);
+    assert(description.trim(), `Missing description: ${path}`);
+    assert.equal(pageDescription(withoutTrailingSlash), description, withoutTrailingSlash);
+    descriptions.push(description);
+  }
+  assert.equal(new Set(descriptions).size, expectedTitles.length, 'Each page has its own description');
+});
+
+test('unknown pages retain the not-found title and Home description fallback', () => {
+  for (const path of ['/missing-page', '/missing-page/', '/__not-found__/', '/people/missing/']) {
+    assert.equal(findPage(path), undefined, path);
+    assert.equal(pageTitle(path), 'Page not found | MLB Lab', path);
+    assert.equal(pageDescription(path), pageDescription('/'), path);
+  }
 });
 
 test('old hash URLs migrate to clean paths and preserve both query strings', () => {

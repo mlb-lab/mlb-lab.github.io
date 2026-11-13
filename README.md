@@ -79,7 +79,8 @@ Members와 Alumni는 `:is(.members-grid, .alumni-grid)` 아래의 같은 회색 
 - `publications.json`: 첨부 원문의 실제 논문 43개를 반영함. 신규 논문은 같은 서식 조각 구조로 추가
 - `news.json`: 연구실 소식 전문·날짜·사진·본문 서식
 - `contact.json`: 공개 가능한 주소·이메일·전화·지도 URL
-- `index.html`: 공식 명칭과 소개에 맞게 기본 title·description 수정
+- `src/app/routes.js`: 페이지별 SEO title·description 수정. 클라이언트 이동과 정적 HTML 생성에서 같은 함수를 사용합니다.
+- `index.html`: 개발 환경에서 React 실행 전 표시할 기본 title·description과 사이트 인증 태그 관리
 
 확인할 자료가 없으면 목록은 `[]`, 교수는 `null`로 둘 수 있습니다. 연락처의 ‘등록 예정’ 안내는 데이터 입력 시 실제 정보로 대체됩니다. 사진·논문 PDF는 공개 권한이 있는 자료만 사용하세요.
 
@@ -89,7 +90,7 @@ Professor에는 현재 사용자가 제공한 이미지의 경력(Experience), �
 
 기존 운영 URL은 **https://mlb-lab.github.io/** 입니다. `mlb-lab/mlb-lab.github.io`는 Organization 루트 사이트이므로 Vite `base`와 BrowserRouter `basename`은 `/`입니다. 프로젝트 사이트로 옮기는 경우에만 빌드 환경변수 `VITE_BASE_PATH=/<repository>/`를 설정합니다. 이 값을 Vite의 `BASE_URL`을 통해 클라이언트·서버 Router와 이미지·PDF 경로에 동일하게 사용합니다. 커스텀 도메인의 루트에 게시하는 경우도 `/`입니다.
 
-**BrowserRouter + 빌드 시 정적 HTML 생성**을 사용합니다. `/news/` 요청은 실제 `dist/news/index.html`에 대응하므로 직접 접속·새로고침에 SPA 서버 재작성 규칙이 필요 없습니다. 각 HTML에는 해당 페이지 본문과 제목이 있고, JS 실행 후 React가 hydrateRoot로 이벤트를 연결합니다. 개발 환경의 빈 루트에는 createRoot를 사용합니다. 서버 프로세스·신규 런타임 패키지 없이 현재 고정 페이지 구조에 적합한 방식입니다.
+**BrowserRouter + 빌드 시 정적 HTML 생성**을 사용합니다. `/news/` 요청은 실제 `dist/news/index.html`에 대응하므로 직접 접속·새로고침에 SPA 서버 재작성 규칙이 필요 없습니다. 각 HTML에는 해당 페이지 본문과 SEO 제목·설명이 있고, JS 실행 후 React가 hydrateRoot로 이벤트를 연결합니다. 개발 환경의 빈 루트에는 createRoot를 사용합니다. 서버 프로세스·신규 런타임 패키지 없이 현재 고정 페이지 구조에 적합한 방식입니다.
 
 ```text
 dist/

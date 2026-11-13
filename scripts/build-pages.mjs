@@ -23,9 +23,12 @@ export async function buildPages({ base = process.env.VITE_BASE_PATH || '/', out
     const { render } = await import(pathToFileURL(join(serverDir, 'entry-server.mjs')).href);
     const template = await readFile(join(outDir, 'index.html'), 'utf8');
     if (!template.includes('<div id="root"></div>')) throw new Error('Static build requires an empty #root in index.html.');
+    const descriptionTag = /<meta\b[^>]*\bname=["']description["'][^>]*>/i;
+    if (!descriptionTag.test(template)) throw new Error('Static build requires a description meta tag in index.html.');
     function htmlFor(path) {
-      const { title, body } = render(path);
+      const { title, description, body } = render(path);
       return template.replace(/<title>[^<]*<\/title>/, () => `<title>${escapeHtml(title)}</title>`)
+        .replace(descriptionTag, () => `<meta name="description" content="${escapeHtml(description)}">`)
         .replace('<div id="root"></div>', () => `<div id="root">${body}</div>`);
     }
     async function writeRoute(path, html) {
