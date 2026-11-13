@@ -79,8 +79,8 @@ Members와 Alumni는 `:is(.members-grid, .alumni-grid)` 아래의 같은 회색 
 - `publications.json`: 첨부 원문의 실제 논문 43개를 반영함. 신규 논문은 같은 서식 조각 구조로 추가
 - `news.json`: 연구실 소식 전문·날짜·사진·본문 서식
 - `contact.json`: 공개 가능한 주소·이메일·전화·지도 URL
-- `src/app/routes.js`: 페이지별 SEO title·description 수정. 클라이언트 이동과 정적 HTML 생성에서 같은 함수를 사용합니다.
-- `index.html`: 개발 환경에서 React 실행 전 표시할 기본 title·description과 사이트 인증 태그 관리
+- `src/app/routes.js`: 페이지별 SEO title·description·Canonical 관리. 클라이언트 이동과 정적 HTML 생성에서 같은 함수를 사용합니다.
+- `index.html`: 개발 환경에서 React 실행 전 표시할 기본 title·description, 사이트 인증 태그, WebSite JSON-LD·og:site_name·favicon 관리
 
 확인할 자료가 없으면 목록은 `[]`, 교수는 `null`로 둘 수 있습니다. 연락처의 ‘등록 예정’ 안내는 데이터 입력 시 실제 정보로 대체됩니다. 사진·논문 PDF는 공개 권한이 있는 자료만 사용하세요.
 
@@ -91,6 +91,14 @@ Professor에는 현재 사용자가 제공한 이미지의 경력(Experience), �
 기존 운영 URL은 **https://mlb-lab.github.io/** 입니다. `mlb-lab/mlb-lab.github.io`는 Organization 루트 사이트이므로 Vite `base`와 BrowserRouter `basename`은 `/`입니다. 프로젝트 사이트로 옮기는 경우에만 빌드 환경변수 `VITE_BASE_PATH=/<repository>/`를 설정합니다. 이 값을 Vite의 `BASE_URL`을 통해 클라이언트·서버 Router와 이미지·PDF 경로에 동일하게 사용합니다. 커스텀 도메인의 루트에 게시하는 경우도 `/`입니다.
 
 **BrowserRouter + 빌드 시 정적 HTML 생성**을 사용합니다. `/news/` 요청은 실제 `dist/news/index.html`에 대응하므로 직접 접속·새로고침에 SPA 서버 재작성 규칙이 필요 없습니다. 각 HTML에는 해당 페이지 본문과 SEO 제목·설명이 있고, JS 실행 후 React가 hydrateRoot로 이벤트를 연결합니다. 개발 환경의 빈 루트에는 createRoot를 사용합니다. 서버 프로세스·신규 런타임 패키지 없이 현재 고정 페이지 구조에 적합한 방식입니다.
+
+Canonical은 `src/app/routes.js`의 `CANONICAL_ORIGIN`(`https://mlb-lab.github.io`)과 `pages`에 등록한 경로로 생성합니다. 8개 페이지의 `<head>`에는 각각 자기 자신의 절대 URL을 가리키는 태그 하나가 들어가며, 끝 `/`를 유지하고 쿼리·해시는 제외합니다. 로컬과 `/lab-preview/` 미리보기에서도 운영 URL을 사용합니다. `/people/` 별칭은 Professor의 Canonical을 사용하고 미등록 경로·404에는 Canonical을 넣지 않습니다. 클라이언트 이동에서도 기존 태그를 갱신하고 중복을 제거합니다. 실제 운영 도메인이나 게시 경로를 바꾸는 경우에는 이 기준 주소도 함께 갱신하세요.
+
+Google 사이트 이름 정보는 `index.html`의 WebSite JSON-LD와 `og:site_name`에서 관리합니다. 선호 이름은 `MLB Lab`, 대체 이름은 `Machine Learning & Bioinformatics Lab`, 사이트 URL은 `https://mlb-lab.github.io/`입니다. 이 정보는 사이트 전체를 설명하는 공통 정보이며 기존 빌드가 홈을 포함한 모든 정적 HTML의 `<head>`에 한 개씩 보존합니다. 페이지별 Title·Description·Canonical은 각 경로 값으로 따로 생성합니다. Google Search Console 인증 태그와 `public/sitemap.xml`, `public/robots.txt`, `public/sitemap.txt`는 그대로 유지합니다.
+
+Favicon은 `public/images/home/MLB 로고.png`를 변형 없이 복사한 `public/favicon.png`입니다. 투명 배경의 1254×1254 정사각형 PNG이고, `index.html`의 icon 링크에서 `%BASE_URL%favicon.png`를 사용하므로 루트와 프로젝트 base 모두 지원합니다. 로고를 교체할 때 favicon도 같은 정사각형 원본으로 갱신하고 HTML의 sizes 값을 실제 크기에 맞추세요. favicon URL은 계속 `/favicon.png`를 유지합니다.
+
+배포 후 `https://mlb-lab.github.io/`의 페이지 소스에서 WebSite JSON-LD·og:site_name을 확인하고, `/favicon.png`, `/sitemap.xml`, `/robots.txt`가 정상 응답하는지 확인하세요. Search Console의 URL 검사로 홈의 라이브 테스트와 색인 생성 요청을 진행할 수 있습니다. 사이트 이름과 favicon의 실제 검색 표시 여부는 Google이 결정하며 재크롤링·처리에 며칠에서 몇 주가 걸릴 수 있습니다. 사이트 이름은 Rich Results Test 지원 대상이 아니므로 JSON-LD 문법 검사는 Schema Markup Validator를 사용합니다. 기준: [Google 사이트 이름 가이드](https://developers.google.com/search/docs/appearance/site-names), [Google favicon 가이드](https://developers.google.com/search/docs/appearance/favicon-in-search).
 
 ```text
 dist/

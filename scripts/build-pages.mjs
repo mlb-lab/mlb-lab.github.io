@@ -21,14 +21,19 @@ export async function buildPages({ base = process.env.VITE_BASE_PATH || '/', out
       rolldownOptions: { output: { entryFileNames: 'entry-server.mjs' } },
     } });
     const { render } = await import(pathToFileURL(join(serverDir, 'entry-server.mjs')).href);
-    const template = await readFile(join(outDir, 'index.html'), 'utf8');
+    // A template canonical must not be copied to every page or duplicated in the output.
+    const template = (await readFile(join(outDir, 'index.html'), 'utf8')).replace(/<link\b[^>]*>/gi, (tag) => {
+      const rel = tag.match(/\srel\s*=\s*(["'])(.*?)\1/i)?.[2];
+      return rel?.toLowerCase().split(/\s+/).includes('canonical') ? '' : tag;
+    });
     if (!template.includes('<div id="root"></div>')) throw new Error('Static build requires an empty #root in index.html.');
     const descriptionTag = /<meta\b[^>]*\bname=["']description["'][^>]*>/i;
     if (!descriptionTag.test(template)) throw new Error('Static build requires a description meta tag in index.html.');
     function htmlFor(path) {
-      const { title, description, body } = render(path);
+      const { title, description, canonical, body } = render(path);
       return template.replace(/<title>[^<]*<\/title>/, () => `<title>${escapeHtml(title)}</title>`)
         .replace(descriptionTag, () => `<meta name="description" content="${escapeHtml(description)}">`)
+        .replace('</head>', () => `${canonical ? `<link rel="canonical" href="${escapeHtml(canonical)}">\n` : ''}</head>`)
         .replace('<div id="root"></div>', () => `<div id="root">${body}</div>`);
     }
     async function writeRoute(path, html) {

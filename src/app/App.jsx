@@ -14,6 +14,7 @@ import {
   pages,
   pageTitle,
   pageDescription,
+  pageCanonical,
 } from './routes.js';
 
 const pageElements = {
@@ -48,6 +49,22 @@ export default function App() {
       'content',
       pageDescription(pathname)
     );
+
+    // Reuse the server-rendered canonical and keep only one after client navigation.
+    const canonicalUrl = pageCanonical(pathname);
+    const canonicals = [...document.head.querySelectorAll('link[rel~="canonical" i]')];
+    let canonical = canonicals.shift();
+    canonicals.forEach((duplicate) => duplicate.remove());
+    if (canonicalUrl) {
+      if (!canonical) {
+        canonical = document.createElement('link');
+        document.head.appendChild(canonical);
+      }
+      canonical.setAttribute('rel', 'canonical');
+      canonical.setAttribute('href', canonicalUrl);
+    } else {
+      canonical?.remove();
+    }
   }, [pathname]);
   return <Routes><Route element={<SiteLayout />}>
     {pages.map((page) => <Route key={page.id} path={page.path} element={pageElements[page.id]} />)}
