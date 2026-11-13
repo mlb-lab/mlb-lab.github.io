@@ -5,9 +5,23 @@ import { tmpdir } from 'node:os';
 import { resolve, join, sep, extname, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { once } from 'node:events';
-import { pages, aliases } from '../src/app/routes.js';
+import { pages, aliases, pageTitle, pageDescription } from '../src/app/routes.js';
 import { deployedPath, normalizeBase } from '../src/lib/routing.js';
 import { buildPages } from './build-pages.mjs';
+
+const escapeHtml = (text) => text.replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+
+function inspectMetadata(html, path) {
+  const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1];
+  assert(head, `Missing document head: ${path}`);
+  const titles = [...head.matchAll(/<title>([\s\S]*?)<\/title>/gi)];
+  assert.equal(titles.length, 1, `Expected one page title: ${path}`);
+  assert.equal(titles[0][1], escapeHtml(pageTitle(path)), `Incorrect page title: ${path}`);
+  const descriptions = [...head.matchAll(/<meta\b[^>]*\bname=(["'])description\1[^>]*>/gi)];
+  assert.equal(descriptions.length, 1, `Expected one page description: ${path}`);
+  const content = descriptions[0][0].match(/\bcontent=(["'])([\s\S]*?)\1/i)?.[2];
+  assert.equal(content, escapeHtml(pageDescription(path)), `Incorrect page description: ${path}`);
+}
 
 // A directory-index static server, deliberately without Vite/SPA fallback.
 export async function verifyPages({ outDir = resolve('dist'), base = '/' } = {}) {
@@ -76,7 +90,7 @@ export async function verifyPages({ outDir = resolve('dist'), base = '/' } = {})
         assert.match(html, /<div id="root"><[^>]+/);
         assert.match(html, /<h1(?:\s[^>]*)?>/);
         assert(!html.includes('<h1>페이지를 찾을 수 없습니다.</h1>'), path);
-        assert(html.includes(`<title>${page.title} | `), path);
+        inspectMetadata(html, page.path);
         await inspectReferences(html);
       }
       if (page.path !== '/') {
@@ -91,12 +105,14 @@ export async function verifyPages({ outDir = resolve('dist'), base = '/' } = {})
       const html = await response.text();
       assert(html.includes(`location.replace(${JSON.stringify(deployedPath(alias.target, base))}+location.search+location.hash)`));
       assert(html.includes('http-equiv="refresh"'));
+      inspectMetadata(html, alias.target);
       await inspectReferences(html);
     }
     const missing = await fetch(`${origin}${deployedPath('/missing-page/', base)}`);
     assert.equal(missing.status, 404);
     const missingHtml = await missing.text();
     assert(missingHtml.includes('<h1>페이지를 찾을 수 없습니다.</h1>'));
+    inspectMetadata(missingHtml, '/missing-page/');
     await inspectReferences(missingHtml);
     // Also fetch lazy chunks: the Home WebGL scene is loaded only after hydration.
     for (const file of await readdir(join(directory, 'assets'))) {
