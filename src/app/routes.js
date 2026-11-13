@@ -19,6 +19,16 @@ export const pagePath = (id) => {
 export const normalizePath = (path) => path.replace(/\/+$/, '') || '/';
 export const findPage = (path) => pages.find((page) => normalizePath(page.path) === normalizePath(path));
 
+const CANONICAL_ORIGIN = 'https://mlb-lab.github.io';
+
+// Canonicals identify production pages, including when viewed on localhost or a preview base.
+export const pageCanonical = (path) => {
+  const pathname = path.split(/[?#]/, 1)[0];
+  const alias = aliases.find((item) => normalizePath(item.path) === normalizePath(pathname));
+  const page = findPage(alias?.target ?? pathname);
+  return page ? new URL(page.path, CANONICAL_ORIGIN).href : null;
+};
+
 const LAB_NAME = 'MLB Lab';
 const PROFESSOR_NAME = 'Prof. Giltae Song';
 

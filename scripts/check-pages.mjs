@@ -5,13 +5,19 @@ import { tmpdir } from 'node:os';
 import { resolve, join, sep, extname, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { once } from 'node:events';
-import { pages, aliases, pageTitle, pageDescription } from '../src/app/routes.js';
+import { pages, aliases, pageTitle, pageDescription, pageCanonical } from '../src/app/routes.js';
 import { deployedPath, normalizeBase } from '../src/lib/routing.js';
 import { buildPages } from './build-pages.mjs';
 
 const escapeHtml = (text) => text.replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+const attributeValue = (tag, name) => tag.match(new RegExp(`\\b${name}=(["'])([\\s\\S]*?)\\1`, 'i'))?.[2];
 
-function inspectMetadata(html, path) {
+function googleVerificationContents(html) {
+  return [...html.matchAll(/<meta\b[^>]*\bname=(["'])google-site-verification\1[^>]*>/gi)]
+    .map((match) => match[0].match(/\bcontent=(["'])([\s\S]*?)\1/i)?.[2]);
+}
+
+function inspectMetadata(html, path, expectedVerification, { base, faviconSize }) {
   const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1];
   assert(head, `Missing document head: ${path}`);
   const titles = [...head.matchAll(/<title>([\s\S]*?)<\/title>/gi)];
@@ -21,6 +27,37 @@ function inspectMetadata(html, path) {
   assert.equal(descriptions.length, 1, `Expected one page description: ${path}`);
   const content = descriptions[0][0].match(/\bcontent=(["'])([\s\S]*?)\1/i)?.[2];
   assert.equal(content, escapeHtml(pageDescription(path)), `Incorrect page description: ${path}`);
+  const canonical = pageCanonical(path);
+  const canonicalLinks = [...head.matchAll(/<link\b[^>]*\brel=(["'])canonical\1[^>]*>/gi)];
+  assert.equal(canonicalLinks.length, canonical ? 1 : 0, `Incorrect canonical link count: ${path}`);
+  if (canonical) {
+    const href = canonicalLinks[0][0].match(/\bhref=(["'])([\s\S]*?)\1/i)?.[2];
+    assert.equal(href, escapeHtml(canonical), `Incorrect canonical URL: ${path}`);
+  }
+  assert.deepEqual(googleVerificationContents(head), expectedVerification, `Google Search Console verification changed: ${path}`);
+  const siteNames = [...head.matchAll(/<meta\b[^>]*\bproperty=(["'])og:site_name\1[^>]*>/gi)];
+  assert.equal(siteNames.length, 1, `Expected one Open Graph site name: ${path}`);
+  assert.equal(attributeValue(siteNames[0][0], 'content'), 'MLB Lab', `Incorrect Open Graph site name: ${path}`);
+  const structuredData = [...head.matchAll(/<script\b[^>]*\btype=(["'])application\/ld\+json\1[^>]*>([\s\S]*?)<\/script>/gi)]
+    .map((match) => {
+      let data;
+      assert.doesNotThrow(() => { data = JSON.parse(match[2]); }, `Invalid JSON-LD: ${path}`);
+      return data;
+    });
+  const websites = structuredData.filter((data) => data?.['@type'] === 'WebSite');
+  assert.equal(websites.length, 1, `Expected one WebSite JSON-LD object: ${path}`);
+  assert.deepEqual(websites[0], {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'MLB Lab',
+    alternateName: 'Machine Learning & Bioinformatics Lab',
+    url: 'https://mlb-lab.github.io/',
+  }, `Incorrect WebSite JSON-LD: ${path}`);
+  const icons = [...head.matchAll(/<link\b[^>]*\brel=(["'])icon\1[^>]*>/gi)];
+  assert.equal(icons.length, 1, `Expected one favicon: ${path}`);
+  assert.equal(attributeValue(icons[0][0], 'type'), 'image/png', `Incorrect favicon type: ${path}`);
+  assert.equal(attributeValue(icons[0][0], 'href'), `${base}favicon.png`, `Incorrect favicon path: ${path}`);
+  assert.equal(attributeValue(icons[0][0], 'sizes'), faviconSize, `Favicon sizes do not match the PNG: ${path}`);
 }
 
 // A directory-index static server, deliberately without Vite/SPA fallback.
@@ -28,6 +65,20 @@ export async function verifyPages({ outDir = resolve('dist'), base = '/' } = {})
   base = normalizeBase(base);
   const directory = resolve(outDir);
   const notFound = await readFile(join(directory, '404.html'));
+  const sourceTemplate = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+  const expectedVerification = googleVerificationContents(sourceTemplate);
+  const originalLogo = await readFile(new URL('../public/images/home/MLB 로고.png', import.meta.url));
+  const favicon = await readFile(join(directory, 'favicon.png'));
+  assert.deepEqual(favicon, originalLogo, 'Favicon must preserve the existing transparent logo');
+  assert(favicon.length >= 33, 'Favicon is not a complete PNG header');
+  assert.deepEqual(favicon.subarray(0, 8), Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]), 'Invalid favicon PNG signature');
+  assert.equal(favicon.readUInt32BE(8), 13, 'Invalid favicon IHDR length');
+  assert.equal(favicon.toString('ascii', 12, 16), 'IHDR', 'Favicon must start with a PNG IHDR chunk');
+  const width = favicon.readUInt32BE(16);
+  const height = favicon.readUInt32BE(20);
+  assert.equal(width, height, 'Favicon must be square');
+  assert(width >= 48, 'Favicon must be at least 48 by 48 pixels');
+  const sharedMetadata = { base, faviconSize: `${width}x${height}` };
   const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.png': 'image/png', '.pdf': 'application/pdf' };
   const server = createServer(async (request, response) => {
     try {
@@ -76,6 +127,10 @@ export async function verifyPages({ outDir = resolve('dist'), base = '/' } = {})
         checked.add(url.href);
         const response = await fetch(url);
         assert.equal(response.status, 200, `Broken reference: ${value}`);
+        if (url.pathname === `${base}favicon.png`) {
+          assert.equal(response.headers.get('content-type'), 'image/png', 'Favicon must be served as a PNG');
+          assert.deepEqual(Buffer.from(await response.arrayBuffer()), originalLogo, 'Served favicon differs from the original logo');
+        }
         if (/\.(?:js|css)$/.test(url.pathname)) {
           assert(!response.headers.get('content-type').includes('text/html'), `HTML returned for asset: ${value}`);
         }
@@ -90,7 +145,7 @@ export async function verifyPages({ outDir = resolve('dist'), base = '/' } = {})
         assert.match(html, /<div id="root"><[^>]+/);
         assert.match(html, /<h1(?:\s[^>]*)?>/);
         assert(!html.includes('<h1>페이지를 찾을 수 없습니다.</h1>'), path);
-        inspectMetadata(html, page.path);
+        inspectMetadata(html, page.path, expectedVerification, sharedMetadata);
         await inspectReferences(html);
       }
       if (page.path !== '/') {
@@ -105,15 +160,23 @@ export async function verifyPages({ outDir = resolve('dist'), base = '/' } = {})
       const html = await response.text();
       assert(html.includes(`location.replace(${JSON.stringify(deployedPath(alias.target, base))}+location.search+location.hash)`));
       assert(html.includes('http-equiv="refresh"'));
-      inspectMetadata(html, alias.target);
+      inspectMetadata(html, alias.target, expectedVerification, sharedMetadata);
       await inspectReferences(html);
     }
     const missing = await fetch(`${origin}${deployedPath('/missing-page/', base)}`);
     assert.equal(missing.status, 404);
     const missingHtml = await missing.text();
     assert(missingHtml.includes('<h1>페이지를 찾을 수 없습니다.</h1>'));
-    inspectMetadata(missingHtml, '/missing-page/');
+    inspectMetadata(missingHtml, '/missing-page/', expectedVerification, sharedMetadata);
     await inspectReferences(missingHtml);
+    for (const filename of ['sitemap.xml', 'robots.txt', 'sitemap.txt']) {
+      const source = await readFile(new URL(`../public/${filename}`, import.meta.url));
+      const url = `${origin}${base}${filename}`;
+      const response = await fetch(url);
+      assert.equal(response.status, 200, `Missing discovery file: ${filename}`);
+      assert.deepEqual(Buffer.from(await response.arrayBuffer()), source, `Discovery file changed during deployment: ${filename}`);
+      checked.add(url);
+    }
     // Also fetch lazy chunks: the Home WebGL scene is loaded only after hydration.
     for (const file of await readdir(join(directory, 'assets'))) {
       if (!/\.(?:js|css)$/.test(file)) continue;
