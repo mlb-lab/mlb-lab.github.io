@@ -9,7 +9,6 @@ import PublicationsPage from '../pages/PublicationsPage.jsx';
 import NewsPage from '../pages/NewsPage.jsx';
 import ContactPage from '../pages/ContactPage.jsx';
 import NotFoundPage from '../pages/NotFoundPage.jsx';
-import site from '../data/site.json';
 import {
   aliases,
   pages,
