@@ -10,7 +10,12 @@ import NewsPage from '../pages/NewsPage.jsx';
 import ContactPage from '../pages/ContactPage.jsx';
 import NotFoundPage from '../pages/NotFoundPage.jsx';
 import site from '../data/site.json';
-import { aliases, pages, pageTitle } from './routes.js';
+import {
+  aliases,
+  pages,
+  pageTitle,
+  pageDescription,
+} from './routes.js';
 
 const pageElements = {
   home: <HomePage />, professor: <ProfessorPage />, members: <PeoplePage kind="members" />,
@@ -25,7 +30,26 @@ function AliasRedirect({ target }) {
 
 export default function App() {
   const { pathname } = useLocation();
-  useEffect(() => { document.title = pageTitle(pathname, site.name); }, [pathname]);
+  useEffect(() => {
+    // Update page title
+    document.title = pageTitle(pathname);
+  
+    // Update page description
+    let description = document.querySelector(
+      'meta[name="description"]'
+    );
+  
+    if (!description) {
+      description = document.createElement('meta');
+      description.setAttribute('name', 'description');
+      document.head.appendChild(description);
+    }
+  
+    description.setAttribute(
+      'content',
+      pageDescription(pathname)
+    );
+  }, [pathname]);
   return <Routes><Route element={<SiteLayout />}>
     {pages.map((page) => <Route key={page.id} path={page.path} element={pageElements[page.id]} />)}
     {aliases.map((alias) => <Route key={alias.path} path={alias.path} element={<AliasRedirect target={alias.target} />} />)}
